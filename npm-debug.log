@@ -1,0 +1,1819 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'mpg321' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 verbose config Skipping project config: /home/aleixgil/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData mpg321
+9 silly fetchNamedPackageData mpg321
+10 silly mapToRegistry name mpg321
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/mpg321
+14 verbose request uri https://registry.npmjs.org/mpg321
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 18:07:19
+17 verbose request id dfd09db4b8d29134
+18 http request GET https://registry.npmjs.org/mpg321
+19 http 200 https://registry.npmjs.org/mpg321
+20 verbose headers { date: 'Wed, 28 Aug 2019 16:07:20 GMT',
+20 verbose headers   'content-type': 'application/json; charset=UTF-8',
+20 verbose headers   'transfer-encoding': 'chunked',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'set-cookie':
+20 verbose headers    [ '__cfduid=dff2db4574ee094e833ea37f17dd70a381567008439; expires=Thu, 27-Aug-20 16:07:19 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+20 verbose headers   'cf-cache-status': 'MISS',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'cf-ray': '50d7899b4ade610d-BCN',
+20 verbose headers   etag: 'W/"836cf9561e45050289986aaefaff281e"',
+20 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+20 verbose headers   'last-modified': 'Sun, 27 May 2018 08:39:38 GMT',
+20 verbose headers   vary: 'accept-encoding, accept',
+20 verbose headers   server: 'cloudflare',
+20 verbose headers   'content-encoding': 'gzip' }
+21 silly get cb [ 200,
+21 silly get   { date: 'Wed, 28 Aug 2019 16:07:20 GMT',
+21 silly get     'content-type': 'application/json; charset=UTF-8',
+21 silly get     'transfer-encoding': 'chunked',
+21 silly get     connection: 'keep-alive',
+21 silly get     'set-cookie':
+21 silly get      [ '__cfduid=dff2db4574ee094e833ea37f17dd70a381567008439; expires=Thu, 27-Aug-20 16:07:19 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+21 silly get     'cf-cache-status': 'MISS',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'cf-ray': '50d7899b4ade610d-BCN',
+21 silly get     etag: 'W/"836cf9561e45050289986aaefaff281e"',
+21 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 silly get     'last-modified': 'Sun, 27 May 2018 08:39:38 GMT',
+21 silly get     vary: 'accept-encoding, accept',
+21 silly get     server: 'cloudflare',
+21 silly get     'content-encoding': 'gzip' } ]
+22 verbose get saving mpg321 to /home/aleixgil/.npm/registry.npmjs.org/mpg321/.cache.json
+23 silly install normalizeTree
+24 silly loadCurrentTree Finishing
+25 silly loadIdealTree Starting
+26 silly install loadIdealTree
+27 silly cloneCurrentTree Starting
+28 silly install cloneCurrentTreeToIdealTree
+29 silly cloneCurrentTree Finishing
+30 silly loadShrinkwrap Starting
+31 silly install loadShrinkwrap
+32 silly loadShrinkwrap Finishing
+33 silly loadAllDepsIntoIdealTree Starting
+34 silly install loadAllDepsIntoIdealTree
+35 silly resolveWithNewModule mpg321@0.1.5 checking installable status
+36 silly cache add args [ 'mpg321', null ]
+37 verbose cache add spec mpg321
+38 silly cache add parsed spec Result {
+38 silly cache add   raw: 'mpg321',
+38 silly cache add   scope: null,
+38 silly cache add   name: 'mpg321',
+38 silly cache add   rawSpec: '',
+38 silly cache add   spec: 'latest',
+38 silly cache add   type: 'tag' }
+39 silly addNamed mpg321@latest
+40 verbose addNamed "latest" is being treated as a dist-tag for mpg321
+41 info addNameTag [ 'mpg321', 'latest' ]
+42 silly mapToRegistry name mpg321
+43 silly mapToRegistry using default registry
+44 silly mapToRegistry registry https://registry.npmjs.org/
+45 silly mapToRegistry uri https://registry.npmjs.org/mpg321
+46 verbose addNameTag registry:https://registry.npmjs.org/mpg321 not in flight; fetching
+47 verbose get https://registry.npmjs.org/mpg321 not expired, no request
+48 silly addNameTag next cb for mpg321 with tag latest
+49 silly addNamed mpg321@0.1.5
+50 verbose addNamed "0.1.5" is a plain semver version for mpg321
+51 silly mapToRegistry name mpg321
+52 silly mapToRegistry using default registry
+53 silly mapToRegistry registry https://registry.npmjs.org/
+54 silly mapToRegistry uri https://registry.npmjs.org/mpg321
+55 verbose addRemoteTarball https://registry.npmjs.org/mpg321/-/mpg321-0.1.5.tgz not in flight; adding
+56 verbose addRemoteTarball [ 'https://registry.npmjs.org/mpg321/-/mpg321-0.1.5.tgz',
+56 verbose addRemoteTarball   'f4a1e3b9b1572ddfbfb448184d8faace7615dda3' ]
+57 info retry fetch attempt 1 at 18:07:20
+58 info attempt registry request try #1 at 18:07:20
+59 http fetch GET https://registry.npmjs.org/mpg321/-/mpg321-0.1.5.tgz
+60 http fetch 200 https://registry.npmjs.org/mpg321/-/mpg321-0.1.5.tgz
+61 silly fetchAndShaCheck shasum f4a1e3b9b1572ddfbfb448184d8faace7615dda3
+62 verbose addTmpTarball /tmp/npm-20350-7eca657c/registry.npmjs.org/mpg321/-/mpg321-0.1.5.tgz not in flight; adding
+63 verbose addTmpTarball already have metadata; skipping unpack for mpg321@0.1.5
+64 silly cache afterAdd mpg321@0.1.5
+65 verbose afterAdd /home/aleixgil/.npm/mpg321/0.1.5/package/package.json not in flight; writing
+66 verbose afterAdd /home/aleixgil/.npm/mpg321/0.1.5/package/package.json written
+67 silly fetchNamedPackageData event-stream
+68 silly mapToRegistry name event-stream
+69 silly mapToRegistry using default registry
+70 silly mapToRegistry registry https://registry.npmjs.org/
+71 silly mapToRegistry uri https://registry.npmjs.org/event-stream
+72 silly fetchNamedPackageData which
+73 silly mapToRegistry name which
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry uri https://registry.npmjs.org/which
+77 verbose request uri https://registry.npmjs.org/event-stream
+78 verbose request no auth needed
+79 info attempt registry request try #1 at 18:07:21
+80 http request GET https://registry.npmjs.org/event-stream
+81 http 200 https://registry.npmjs.org/event-stream
+82 verbose headers { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+82 verbose headers   'content-type': 'application/json',
+82 verbose headers   'transfer-encoding': 'chunked',
+82 verbose headers   connection: 'keep-alive',
+82 verbose headers   'set-cookie':
+82 verbose headers    [ '__cfduid=dc97f57f8200d659db472ec2be404d2aa1567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+82 verbose headers   'cf-cache-status': 'HIT',
+82 verbose headers   'cache-control': 'max-age=300',
+82 verbose headers   'cf-ray': '50d789a67c6f610d-BCN',
+82 verbose headers   etag: 'W/"de9b30b54774cd252faa98a84a10a748"',
+82 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+82 verbose headers   'last-modified': 'Sun, 27 Jan 2019 10:20:27 GMT',
+82 verbose headers   vary: 'accept-encoding, accept',
+82 verbose headers   'x-amz-meta-rev': '287-93f9d72667c7e744c701b56e03bd451f',
+82 verbose headers   server: 'cloudflare',
+82 verbose headers   'content-encoding': 'gzip' }
+83 silly get cb [ 200,
+83 silly get   { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+83 silly get     'content-type': 'application/json',
+83 silly get     'transfer-encoding': 'chunked',
+83 silly get     connection: 'keep-alive',
+83 silly get     'set-cookie':
+83 silly get      [ '__cfduid=dc97f57f8200d659db472ec2be404d2aa1567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+83 silly get     'cf-cache-status': 'HIT',
+83 silly get     'cache-control': 'max-age=300',
+83 silly get     'cf-ray': '50d789a67c6f610d-BCN',
+83 silly get     etag: 'W/"de9b30b54774cd252faa98a84a10a748"',
+83 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+83 silly get     'last-modified': 'Sun, 27 Jan 2019 10:20:27 GMT',
+83 silly get     vary: 'accept-encoding, accept',
+83 silly get     'x-amz-meta-rev': '287-93f9d72667c7e744c701b56e03bd451f',
+83 silly get     server: 'cloudflare',
+83 silly get     'content-encoding': 'gzip' } ]
+84 verbose get saving event-stream to /home/aleixgil/.npm/registry.npmjs.org/event-stream/.cache.json
+85 silly resolveWithNewModule event-stream@3.3.5 checking installable status
+86 silly cache add args [ 'event-stream@^3.1.7', null ]
+87 verbose cache add spec event-stream@^3.1.7
+88 silly cache add parsed spec Result {
+88 silly cache add   raw: 'event-stream@^3.1.7',
+88 silly cache add   scope: null,
+88 silly cache add   name: 'event-stream',
+88 silly cache add   rawSpec: '^3.1.7',
+88 silly cache add   spec: '>=3.1.7 <4.0.0',
+88 silly cache add   type: 'range' }
+89 silly addNamed event-stream@>=3.1.7 <4.0.0
+90 verbose addNamed ">=3.1.7 <4.0.0" is a valid semver range for event-stream
+91 silly addNameRange { name: 'event-stream', range: '>=3.1.7 <4.0.0', hasData: false }
+92 silly mapToRegistry name event-stream
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry uri https://registry.npmjs.org/event-stream
+96 verbose addNameRange registry:https://registry.npmjs.org/event-stream not in flight; fetching
+97 verbose get https://registry.npmjs.org/event-stream not expired, no request
+98 silly addNameRange number 2 { name: 'event-stream', range: '>=3.1.7 <4.0.0', hasData: true }
+99 silly addNameRange versions [ 'event-stream',
+99 silly addNameRange   [ '0.1.0',
+99 silly addNameRange     '0.2.0',
+99 silly addNameRange     '0.2.1',
+99 silly addNameRange     '0.3.0',
+99 silly addNameRange     '0.4.0',
+99 silly addNameRange     '0.5.0',
+99 silly addNameRange     '0.5.1',
+99 silly addNameRange     '0.5.2',
+99 silly addNameRange     '0.5.3',
+99 silly addNameRange     '0.6.0',
+99 silly addNameRange     '0.7.0',
+99 silly addNameRange     '0.8.0',
+99 silly addNameRange     '0.8.1',
+99 silly addNameRange     '0.8.2',
+99 silly addNameRange     '0.9.0',
+99 silly addNameRange     '0.9.1',
+99 silly addNameRange     '0.9.2',
+99 silly addNameRange     '0.9.3',
+99 silly addNameRange     '0.9.4',
+99 silly addNameRange     '0.9.6',
+99 silly addNameRange     '0.9.7',
+99 silly addNameRange     '0.9.8',
+99 silly addNameRange     '0.10.0',
+99 silly addNameRange     '1.0.0',
+99 silly addNameRange     '1.1.0',
+99 silly addNameRange     '1.2.0',
+99 silly addNameRange     '1.3.0',
+99 silly addNameRange     '1.3.1',
+99 silly addNameRange     '2.0.0',
+99 silly addNameRange     '2.0.1',
+99 silly addNameRange     '2.0.2',
+99 silly addNameRange     '2.0.3',
+99 silly addNameRange     '2.0.4',
+99 silly addNameRange     '2.0.9',
+99 silly addNameRange     '2.0.10',
+99 silly addNameRange     '2.1.0',
+99 silly addNameRange     '2.1.2',
+99 silly addNameRange     '2.1.3',
+99 silly addNameRange     '2.1.4',
+99 silly addNameRange     '2.1.5',
+99 silly addNameRange     '2.1.7',
+99 silly addNameRange     '2.1.8',
+99 silly addNameRange     '2.1.9',
+99 silly addNameRange     '2.2.0',
+99 silly addNameRange     '2.2.1',
+99 silly addNameRange     '2.2.2',
+99 silly addNameRange     '2.2.3',
+99 silly addNameRange     '3.0.0',
+99 silly addNameRange     '3.0.1',
+99 silly addNameRange     '3.0.2',
+99 silly addNameRange     '3.0.3',
+99 silly addNameRange     '3.0.4',
+99 silly addNameRange     '3.0.5',
+99 silly addNameRange     '3.0.6',
+99 silly addNameRange     '3.0.7',
+99 silly addNameRange     '3.0.8',
+99 silly addNameRange     '3.0.9',
+99 silly addNameRange     '3.0.10',
+99 silly addNameRange     '3.0.11',
+99 silly addNameRange     '3.0.12',
+99 silly addNameRange     '3.0.13',
+99 silly addNameRange     '3.0.14',
+99 silly addNameRange     '3.0.15',
+99 silly addNameRange     '3.0.16',
+99 silly addNameRange     '3.0.17',
+99 silly addNameRange     '3.0.18',
+99 silly addNameRange     '3.0.20',
+99 silly addNameRange     '3.1.0',
+99 silly addNameRange     '3.1.1',
+99 silly addNameRange     '3.1.2',
+99 silly addNameRange     '3.1.4',
+99 silly addNameRange     '3.1.5',
+99 silly addNameRange     '3.1.7',
+99 silly addNameRange     '3.2.0',
+99 silly addNameRange     '3.2.1',
+99 silly addNameRange     '3.2.2',
+99 silly addNameRange     '3.3.0',
+99 silly addNameRange     '3.3.1',
+99 silly addNameRange     '3.3.2',
+99 silly addNameRange     '3.3.3',
+99 silly addNameRange     '3.3.4',
+99 silly addNameRange     '3.3.5',
+99 silly addNameRange     '4.0.0',
+99 silly addNameRange     '4.0.1' ] ]
+100 silly addNamed event-stream@3.3.5
+101 verbose addNamed "3.3.5" is a plain semver version for event-stream
+102 verbose request uri https://registry.npmjs.org/which
+103 verbose request no auth needed
+104 info attempt registry request try #1 at 18:07:21
+105 verbose etag W/"a3c45d3614c726e98569d7e80cebe59c"
+106 verbose lastModified Mon, 04 Mar 2019 08:42:31 GMT
+107 http request GET https://registry.npmjs.org/which
+108 silly mapToRegistry name event-stream
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry uri https://registry.npmjs.org/event-stream
+112 verbose addRemoteTarball https://registry.npmjs.org/event-stream/-/event-stream-3.3.5.tgz not in flight; adding
+113 verbose addRemoteTarball [ 'https://registry.npmjs.org/event-stream/-/event-stream-3.3.5.tgz',
+113 verbose addRemoteTarball   'e5dd8989543630d94c6cf4d657120341fa31636b' ]
+114 info retry fetch attempt 1 at 18:07:21
+115 info attempt registry request try #1 at 18:07:21
+116 http fetch GET https://registry.npmjs.org/event-stream/-/event-stream-3.3.5.tgz
+117 http 304 https://registry.npmjs.org/which
+118 verbose headers { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+118 verbose headers   connection: 'keep-alive',
+118 verbose headers   'set-cookie':
+118 verbose headers    [ '__cfduid=dc97f57f8200d659db472ec2be404d2aa1567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+118 verbose headers   'cf-cache-status': 'HIT',
+118 verbose headers   'cache-control': 'max-age=300',
+118 verbose headers   'cf-ray': '50d789a6dc84610d-BCN',
+118 verbose headers   etag: '"a3c45d3614c726e98569d7e80cebe59c"',
+118 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+118 verbose headers   'last-modified': 'Mon, 04 Mar 2019 08:42:31 GMT',
+118 verbose headers   vary: 'accept-encoding, accept',
+118 verbose headers   'x-amz-meta-rev': '69-c2183082be57a65868fc1c1757225fda',
+118 verbose headers   server: 'cloudflare' }
+119 silly get cb [ 304,
+119 silly get   { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+119 silly get     connection: 'keep-alive',
+119 silly get     'set-cookie':
+119 silly get      [ '__cfduid=dc97f57f8200d659db472ec2be404d2aa1567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+119 silly get     'cf-cache-status': 'HIT',
+119 silly get     'cache-control': 'max-age=300',
+119 silly get     'cf-ray': '50d789a6dc84610d-BCN',
+119 silly get     etag: '"a3c45d3614c726e98569d7e80cebe59c"',
+119 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+119 silly get     'last-modified': 'Mon, 04 Mar 2019 08:42:31 GMT',
+119 silly get     vary: 'accept-encoding, accept',
+119 silly get     'x-amz-meta-rev': '69-c2183082be57a65868fc1c1757225fda',
+119 silly get     server: 'cloudflare' } ]
+120 verbose etag https://registry.npmjs.org/which from cache
+121 verbose get saving which to /home/aleixgil/.npm/registry.npmjs.org/which/.cache.json
+122 http fetch 200 https://registry.npmjs.org/event-stream/-/event-stream-3.3.5.tgz
+123 silly resolveWithNewModule which@1.3.1 checking installable status
+124 silly cache add args [ 'which@^1.0.8', null ]
+125 verbose cache add spec which@^1.0.8
+126 silly cache add parsed spec Result {
+126 silly cache add   raw: 'which@^1.0.8',
+126 silly cache add   scope: null,
+126 silly cache add   name: 'which',
+126 silly cache add   rawSpec: '^1.0.8',
+126 silly cache add   spec: '>=1.0.8 <2.0.0',
+126 silly cache add   type: 'range' }
+127 silly addNamed which@>=1.0.8 <2.0.0
+128 verbose addNamed ">=1.0.8 <2.0.0" is a valid semver range for which
+129 silly addNameRange { name: 'which', range: '>=1.0.8 <2.0.0', hasData: false }
+130 silly mapToRegistry name which
+131 silly mapToRegistry using default registry
+132 silly mapToRegistry registry https://registry.npmjs.org/
+133 silly mapToRegistry uri https://registry.npmjs.org/which
+134 verbose addNameRange registry:https://registry.npmjs.org/which not in flight; fetching
+135 silly fetchAndShaCheck shasum e5dd8989543630d94c6cf4d657120341fa31636b
+136 verbose addTmpTarball /tmp/npm-20350-7eca657c/registry.npmjs.org/event-stream/-/event-stream-3.3.5.tgz not in flight; adding
+137 verbose addTmpTarball already have metadata; skipping unpack for event-stream@3.3.5
+138 verbose get https://registry.npmjs.org/which not expired, no request
+139 silly addNameRange number 2 { name: 'which', range: '>=1.0.8 <2.0.0', hasData: true }
+140 silly addNameRange versions [ 'which',
+140 silly addNameRange   [ '1.0.0',
+140 silly addNameRange     '1.0.1',
+140 silly addNameRange     '1.0.2',
+140 silly addNameRange     '1.0.3',
+140 silly addNameRange     '1.0.5',
+140 silly addNameRange     '1.0.6',
+140 silly addNameRange     '1.0.7',
+140 silly addNameRange     '1.0.8',
+140 silly addNameRange     '1.0.9',
+140 silly addNameRange     '1.1.0',
+140 silly addNameRange     '1.1.1',
+140 silly addNameRange     '1.1.2',
+140 silly addNameRange     '1.2.0',
+140 silly addNameRange     '1.2.1',
+140 silly addNameRange     '1.2.4',
+140 silly addNameRange     '1.2.5',
+140 silly addNameRange     '1.2.6',
+140 silly addNameRange     '1.2.7',
+140 silly addNameRange     '1.2.8',
+140 silly addNameRange     '1.2.9',
+140 silly addNameRange     '1.2.10',
+140 silly addNameRange     '1.2.11',
+140 silly addNameRange     '1.2.12',
+140 silly addNameRange     '1.2.13',
+140 silly addNameRange     '1.2.14',
+140 silly addNameRange     '1.3.0',
+140 silly addNameRange     '1.3.1' ] ]
+141 silly addNamed which@1.3.1
+142 verbose addNamed "1.3.1" is a plain semver version for which
+143 silly cache afterAdd event-stream@3.3.5
+144 verbose afterAdd /home/aleixgil/.npm/event-stream/3.3.5/package/package.json not in flight; writing
+145 verbose afterAdd /home/aleixgil/.npm/event-stream/3.3.5/package/package.json written
+146 silly cache afterAdd which@1.3.1
+147 verbose afterAdd /home/aleixgil/.npm/which/1.3.1/package/package.json not in flight; writing
+148 verbose afterAdd /home/aleixgil/.npm/which/1.3.1/package/package.json written
+149 silly fetchNamedPackageData duplexer
+150 silly mapToRegistry name duplexer
+151 silly mapToRegistry using default registry
+152 silly mapToRegistry registry https://registry.npmjs.org/
+153 silly mapToRegistry uri https://registry.npmjs.org/duplexer
+154 silly fetchNamedPackageData from
+155 silly mapToRegistry name from
+156 silly mapToRegistry using default registry
+157 silly mapToRegistry registry https://registry.npmjs.org/
+158 silly mapToRegistry uri https://registry.npmjs.org/from
+159 silly fetchNamedPackageData map-stream
+160 silly mapToRegistry name map-stream
+161 silly mapToRegistry using default registry
+162 silly mapToRegistry registry https://registry.npmjs.org/
+163 silly mapToRegistry uri https://registry.npmjs.org/map-stream
+164 silly fetchNamedPackageData pause-stream
+165 silly mapToRegistry name pause-stream
+166 silly mapToRegistry using default registry
+167 silly mapToRegistry registry https://registry.npmjs.org/
+168 silly mapToRegistry uri https://registry.npmjs.org/pause-stream
+169 silly fetchNamedPackageData split
+170 silly mapToRegistry name split
+171 silly mapToRegistry using default registry
+172 silly mapToRegistry registry https://registry.npmjs.org/
+173 silly mapToRegistry uri https://registry.npmjs.org/split
+174 silly fetchNamedPackageData stream-combiner
+175 silly mapToRegistry name stream-combiner
+176 silly mapToRegistry using default registry
+177 silly mapToRegistry registry https://registry.npmjs.org/
+178 silly mapToRegistry uri https://registry.npmjs.org/stream-combiner
+179 silly fetchNamedPackageData through
+180 silly mapToRegistry name through
+181 silly mapToRegistry using default registry
+182 silly mapToRegistry registry https://registry.npmjs.org/
+183 silly mapToRegistry uri https://registry.npmjs.org/through
+184 verbose request uri https://registry.npmjs.org/duplexer
+185 verbose request no auth needed
+186 info attempt registry request try #1 at 18:07:21
+187 http request GET https://registry.npmjs.org/duplexer
+188 verbose request uri https://registry.npmjs.org/from
+189 verbose request no auth needed
+190 info attempt registry request try #1 at 18:07:21
+191 http request GET https://registry.npmjs.org/from
+192 verbose request uri https://registry.npmjs.org/map-stream
+193 verbose request no auth needed
+194 info attempt registry request try #1 at 18:07:21
+195 http request GET https://registry.npmjs.org/map-stream
+196 verbose request uri https://registry.npmjs.org/pause-stream
+197 verbose request no auth needed
+198 info attempt registry request try #1 at 18:07:21
+199 http request GET https://registry.npmjs.org/pause-stream
+200 verbose request uri https://registry.npmjs.org/split
+201 verbose request no auth needed
+202 info attempt registry request try #1 at 18:07:21
+203 http request GET https://registry.npmjs.org/split
+204 verbose request uri https://registry.npmjs.org/stream-combiner
+205 verbose request no auth needed
+206 info attempt registry request try #1 at 18:07:21
+207 http request GET https://registry.npmjs.org/stream-combiner
+208 verbose request uri https://registry.npmjs.org/through
+209 verbose request no auth needed
+210 info attempt registry request try #1 at 18:07:21
+211 http request GET https://registry.npmjs.org/through
+212 http 200 https://registry.npmjs.org/duplexer
+213 verbose headers { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+213 verbose headers   'content-type': 'application/json',
+213 verbose headers   'transfer-encoding': 'chunked',
+213 verbose headers   connection: 'keep-alive',
+213 verbose headers   'set-cookie':
+213 verbose headers    [ '__cfduid=dc97f57f8200d659db472ec2be404d2aa1567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+213 verbose headers   'cf-cache-status': 'HIT',
+213 verbose headers   'cache-control': 'max-age=300',
+213 verbose headers   'cf-ray': '50d789a75ca1610d-BCN',
+213 verbose headers   etag: 'W/"761ed8d42287eb9c26e4762cedaf3616"',
+213 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+213 verbose headers   'last-modified': 'Thu, 03 Jan 2019 03:20:12 GMT',
+213 verbose headers   vary: 'accept-encoding, accept',
+213 verbose headers   'x-amz-meta-rev': '43-00f235fef1cbb0a5bc151948bdd970e8',
+213 verbose headers   server: 'cloudflare',
+213 verbose headers   'content-encoding': 'gzip' }
+214 silly get cb [ 200,
+214 silly get   { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+214 silly get     'content-type': 'application/json',
+214 silly get     'transfer-encoding': 'chunked',
+214 silly get     connection: 'keep-alive',
+214 silly get     'set-cookie':
+214 silly get      [ '__cfduid=dc97f57f8200d659db472ec2be404d2aa1567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+214 silly get     'cf-cache-status': 'HIT',
+214 silly get     'cache-control': 'max-age=300',
+214 silly get     'cf-ray': '50d789a75ca1610d-BCN',
+214 silly get     etag: 'W/"761ed8d42287eb9c26e4762cedaf3616"',
+214 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+214 silly get     'last-modified': 'Thu, 03 Jan 2019 03:20:12 GMT',
+214 silly get     vary: 'accept-encoding, accept',
+214 silly get     'x-amz-meta-rev': '43-00f235fef1cbb0a5bc151948bdd970e8',
+214 silly get     server: 'cloudflare',
+214 silly get     'content-encoding': 'gzip' } ]
+215 verbose get saving duplexer to /home/aleixgil/.npm/registry.npmjs.org/duplexer/.cache.json
+216 http 200 https://registry.npmjs.org/from
+217 verbose headers { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+217 verbose headers   'content-type': 'application/json',
+217 verbose headers   'transfer-encoding': 'chunked',
+217 verbose headers   connection: 'keep-alive',
+217 verbose headers   'set-cookie':
+217 verbose headers    [ '__cfduid=dcd6d3f85c701d69d15e2b66217fb6c291567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+217 verbose headers   'cf-cache-status': 'HIT',
+217 verbose headers   'cache-control': 'max-age=300',
+217 verbose headers   'cf-ray': '50d789a75f6961a9-BCN',
+217 verbose headers   etag: 'W/"0133070ebf2ad754e529e26790ca9b5c"',
+217 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+217 verbose headers   'last-modified': 'Thu, 03 Jan 2019 22:19:22 GMT',
+217 verbose headers   vary: 'accept-encoding, accept',
+217 verbose headers   'x-amz-meta-rev': '20-cd02e8aaac1e6ccacb5390a1e7f795c7',
+217 verbose headers   server: 'cloudflare',
+217 verbose headers   'content-encoding': 'gzip' }
+218 silly get cb [ 200,
+218 silly get   { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+218 silly get     'content-type': 'application/json',
+218 silly get     'transfer-encoding': 'chunked',
+218 silly get     connection: 'keep-alive',
+218 silly get     'set-cookie':
+218 silly get      [ '__cfduid=dcd6d3f85c701d69d15e2b66217fb6c291567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+218 silly get     'cf-cache-status': 'HIT',
+218 silly get     'cache-control': 'max-age=300',
+218 silly get     'cf-ray': '50d789a75f6961a9-BCN',
+218 silly get     etag: 'W/"0133070ebf2ad754e529e26790ca9b5c"',
+218 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+218 silly get     'last-modified': 'Thu, 03 Jan 2019 22:19:22 GMT',
+218 silly get     vary: 'accept-encoding, accept',
+218 silly get     'x-amz-meta-rev': '20-cd02e8aaac1e6ccacb5390a1e7f795c7',
+218 silly get     server: 'cloudflare',
+218 silly get     'content-encoding': 'gzip' } ]
+219 verbose get saving from to /home/aleixgil/.npm/registry.npmjs.org/from/.cache.json
+220 silly resolveWithNewModule duplexer@0.1.1 checking installable status
+221 silly cache add args [ 'duplexer@^0.1.1', null ]
+222 verbose cache add spec duplexer@^0.1.1
+223 silly cache add parsed spec Result {
+223 silly cache add   raw: 'duplexer@^0.1.1',
+223 silly cache add   scope: null,
+223 silly cache add   name: 'duplexer',
+223 silly cache add   rawSpec: '^0.1.1',
+223 silly cache add   spec: '>=0.1.1 <0.2.0',
+223 silly cache add   type: 'range' }
+224 silly addNamed duplexer@>=0.1.1 <0.2.0
+225 verbose addNamed ">=0.1.1 <0.2.0" is a valid semver range for duplexer
+226 silly addNameRange { name: 'duplexer', range: '>=0.1.1 <0.2.0', hasData: false }
+227 silly mapToRegistry name duplexer
+228 silly mapToRegistry using default registry
+229 silly mapToRegistry registry https://registry.npmjs.org/
+230 silly mapToRegistry uri https://registry.npmjs.org/duplexer
+231 verbose addNameRange registry:https://registry.npmjs.org/duplexer not in flight; fetching
+232 silly resolveWithNewModule from@0.1.7 checking installable status
+233 silly cache add args [ 'from@^0.1.7', null ]
+234 verbose cache add spec from@^0.1.7
+235 silly cache add parsed spec Result {
+235 silly cache add   raw: 'from@^0.1.7',
+235 silly cache add   scope: null,
+235 silly cache add   name: 'from',
+235 silly cache add   rawSpec: '^0.1.7',
+235 silly cache add   spec: '>=0.1.7 <0.2.0',
+235 silly cache add   type: 'range' }
+236 silly addNamed from@>=0.1.7 <0.2.0
+237 verbose addNamed ">=0.1.7 <0.2.0" is a valid semver range for from
+238 silly addNameRange { name: 'from', range: '>=0.1.7 <0.2.0', hasData: false }
+239 silly mapToRegistry name from
+240 silly mapToRegistry using default registry
+241 silly mapToRegistry registry https://registry.npmjs.org/
+242 silly mapToRegistry uri https://registry.npmjs.org/from
+243 verbose addNameRange registry:https://registry.npmjs.org/from not in flight; fetching
+244 verbose get https://registry.npmjs.org/duplexer not expired, no request
+245 silly addNameRange number 2 { name: 'duplexer', range: '>=0.1.1 <0.2.0', hasData: true }
+246 silly addNameRange versions [ 'duplexer',
+246 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.1.0', '0.1.1' ] ]
+247 silly addNamed duplexer@0.1.1
+248 verbose addNamed "0.1.1" is a plain semver version for duplexer
+249 verbose get https://registry.npmjs.org/from not expired, no request
+250 silly addNameRange number 2 { name: 'from', range: '>=0.1.7 <0.2.0', hasData: true }
+251 silly addNameRange versions [ 'from',
+251 silly addNameRange   [ '0.0.0', '0.0.1', '0.0.2', '0.1.1', '0.1.2', '0.1.3', '0.1.7' ] ]
+252 silly addNamed from@0.1.7
+253 verbose addNamed "0.1.7" is a plain semver version for from
+254 silly mapToRegistry name duplexer
+255 silly mapToRegistry using default registry
+256 silly mapToRegistry registry https://registry.npmjs.org/
+257 silly mapToRegistry uri https://registry.npmjs.org/duplexer
+258 verbose addRemoteTarball https://registry.npmjs.org/duplexer/-/duplexer-0.1.1.tgz not in flight; adding
+259 verbose addRemoteTarball [ 'https://registry.npmjs.org/duplexer/-/duplexer-0.1.1.tgz',
+259 verbose addRemoteTarball   'ace6ff808c1ce66b57d1ebf97977acb02334cfc1' ]
+260 silly mapToRegistry name from
+261 silly mapToRegistry using default registry
+262 silly mapToRegistry registry https://registry.npmjs.org/
+263 silly mapToRegistry uri https://registry.npmjs.org/from
+264 verbose addRemoteTarball https://registry.npmjs.org/from/-/from-0.1.7.tgz not in flight; adding
+265 verbose addRemoteTarball [ 'https://registry.npmjs.org/from/-/from-0.1.7.tgz',
+265 verbose addRemoteTarball   '83c60afc58b9c56997007ed1a768b3ab303a44fe' ]
+266 info retry fetch attempt 1 at 18:07:21
+267 info attempt registry request try #1 at 18:07:21
+268 http fetch GET https://registry.npmjs.org/from/-/from-0.1.7.tgz
+269 info retry fetch attempt 1 at 18:07:21
+270 info attempt registry request try #1 at 18:07:21
+271 http fetch GET https://registry.npmjs.org/duplexer/-/duplexer-0.1.1.tgz
+272 http 200 https://registry.npmjs.org/stream-combiner
+273 verbose headers { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+273 verbose headers   'content-type': 'application/json',
+273 verbose headers   'transfer-encoding': 'chunked',
+273 verbose headers   connection: 'keep-alive',
+273 verbose headers   'set-cookie':
+273 verbose headers    [ '__cfduid=d0f979acbf95ec05a1aff77a323c181941567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+273 verbose headers   'cf-cache-status': 'HIT',
+273 verbose headers   'cache-control': 'max-age=300',
+273 verbose headers   'cf-ray': '50d789a779d061cd-BCN',
+273 verbose headers   etag: 'W/"f483221542a633537e827f70dac307da"',
+273 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+273 verbose headers   'last-modified': 'Sat, 05 Jan 2019 13:33:08 GMT',
+273 verbose headers   vary: 'accept-encoding, accept',
+273 verbose headers   'x-amz-meta-rev': '49-b42df0324dd8795f0688228e9b5d590a',
+273 verbose headers   server: 'cloudflare',
+273 verbose headers   'content-encoding': 'gzip' }
+274 silly get cb [ 200,
+274 silly get   { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+274 silly get     'content-type': 'application/json',
+274 silly get     'transfer-encoding': 'chunked',
+274 silly get     connection: 'keep-alive',
+274 silly get     'set-cookie':
+274 silly get      [ '__cfduid=d0f979acbf95ec05a1aff77a323c181941567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+274 silly get     'cf-cache-status': 'HIT',
+274 silly get     'cache-control': 'max-age=300',
+274 silly get     'cf-ray': '50d789a779d061cd-BCN',
+274 silly get     etag: 'W/"f483221542a633537e827f70dac307da"',
+274 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+274 silly get     'last-modified': 'Sat, 05 Jan 2019 13:33:08 GMT',
+274 silly get     vary: 'accept-encoding, accept',
+274 silly get     'x-amz-meta-rev': '49-b42df0324dd8795f0688228e9b5d590a',
+274 silly get     server: 'cloudflare',
+274 silly get     'content-encoding': 'gzip' } ]
+275 verbose get saving stream-combiner to /home/aleixgil/.npm/registry.npmjs.org/stream-combiner/.cache.json
+276 http 200 https://registry.npmjs.org/split
+277 verbose headers { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+277 verbose headers   'content-type': 'application/json',
+277 verbose headers   'transfer-encoding': 'chunked',
+277 verbose headers   connection: 'keep-alive',
+277 verbose headers   'set-cookie':
+277 verbose headers    [ '__cfduid=dfcd13d2c6ac61f58fab3891b4e31b3c51567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+277 verbose headers   'cf-cache-status': 'HIT',
+277 verbose headers   'cache-control': 'max-age=300',
+277 verbose headers   'cf-ray': '50d789a77fb36107-BCN',
+277 verbose headers   etag: 'W/"edff76472bfd10522744f691904c144e"',
+277 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+277 verbose headers   'last-modified': 'Sat, 05 Jan 2019 13:03:59 GMT',
+277 verbose headers   vary: 'accept-encoding, accept',
+277 verbose headers   'x-amz-meta-rev': '129-78124fb24a210cabcebcbe7b451663b2',
+277 verbose headers   server: 'cloudflare',
+277 verbose headers   'content-encoding': 'gzip' }
+278 silly get cb [ 200,
+278 silly get   { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+278 silly get     'content-type': 'application/json',
+278 silly get     'transfer-encoding': 'chunked',
+278 silly get     connection: 'keep-alive',
+278 silly get     'set-cookie':
+278 silly get      [ '__cfduid=dfcd13d2c6ac61f58fab3891b4e31b3c51567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+278 silly get     'cf-cache-status': 'HIT',
+278 silly get     'cache-control': 'max-age=300',
+278 silly get     'cf-ray': '50d789a77fb36107-BCN',
+278 silly get     etag: 'W/"edff76472bfd10522744f691904c144e"',
+278 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+278 silly get     'last-modified': 'Sat, 05 Jan 2019 13:03:59 GMT',
+278 silly get     vary: 'accept-encoding, accept',
+278 silly get     'x-amz-meta-rev': '129-78124fb24a210cabcebcbe7b451663b2',
+278 silly get     server: 'cloudflare',
+278 silly get     'content-encoding': 'gzip' } ]
+279 verbose get saving split to /home/aleixgil/.npm/registry.npmjs.org/split/.cache.json
+280 http 200 https://registry.npmjs.org/map-stream
+281 verbose headers { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+281 verbose headers   'content-type': 'application/json',
+281 verbose headers   'transfer-encoding': 'chunked',
+281 verbose headers   connection: 'keep-alive',
+281 verbose headers   'set-cookie':
+281 verbose headers    [ '__cfduid=d4f9a108217d1a57b0ae2f419ef86d9801567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+281 verbose headers   'cf-cache-status': 'HIT',
+281 verbose headers   'cache-control': 'max-age=300',
+281 verbose headers   'cf-ray': '50d789a779766197-BCN',
+281 verbose headers   etag: 'W/"07a4ac5be943a16c1bcc471491aabbe6"',
+281 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+281 verbose headers   'last-modified': 'Fri, 04 Jan 2019 18:22:31 GMT',
+281 verbose headers   vary: 'accept-encoding, accept',
+281 verbose headers   'x-amz-meta-rev': '38-d9774f49d4a9bffcb80055d94df11bd4',
+281 verbose headers   server: 'cloudflare',
+281 verbose headers   'content-encoding': 'gzip' }
+282 silly get cb [ 200,
+282 silly get   { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+282 silly get     'content-type': 'application/json',
+282 silly get     'transfer-encoding': 'chunked',
+282 silly get     connection: 'keep-alive',
+282 silly get     'set-cookie':
+282 silly get      [ '__cfduid=d4f9a108217d1a57b0ae2f419ef86d9801567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+282 silly get     'cf-cache-status': 'HIT',
+282 silly get     'cache-control': 'max-age=300',
+282 silly get     'cf-ray': '50d789a779766197-BCN',
+282 silly get     etag: 'W/"07a4ac5be943a16c1bcc471491aabbe6"',
+282 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+282 silly get     'last-modified': 'Fri, 04 Jan 2019 18:22:31 GMT',
+282 silly get     vary: 'accept-encoding, accept',
+282 silly get     'x-amz-meta-rev': '38-d9774f49d4a9bffcb80055d94df11bd4',
+282 silly get     server: 'cloudflare',
+282 silly get     'content-encoding': 'gzip' } ]
+283 verbose get saving map-stream to /home/aleixgil/.npm/registry.npmjs.org/map-stream/.cache.json
+284 http 200 https://registry.npmjs.org/pause-stream
+285 verbose headers { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+285 verbose headers   'content-type': 'application/json',
+285 verbose headers   'transfer-encoding': 'chunked',
+285 verbose headers   connection: 'keep-alive',
+285 verbose headers   'set-cookie':
+285 verbose headers    [ '__cfduid=dda1426bda9933a9e0e39ef17446acba01567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+285 verbose headers   'cf-cache-status': 'HIT',
+285 verbose headers   'cache-control': 'max-age=300',
+285 verbose headers   'cf-ray': '50d789a778286191-BCN',
+285 verbose headers   etag: 'W/"e4cd4dc72469c3ccfc9b491f8708714b"',
+285 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+285 verbose headers   'last-modified': 'Sat, 05 Jan 2019 02:59:22 GMT',
+285 verbose headers   vary: 'accept-encoding, accept',
+285 verbose headers   'x-amz-meta-rev': '29-ad5366a07af8b37301ee1b9bd2802cf3',
+285 verbose headers   server: 'cloudflare',
+285 verbose headers   'content-encoding': 'gzip' }
+286 silly get cb [ 200,
+286 silly get   { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+286 silly get     'content-type': 'application/json',
+286 silly get     'transfer-encoding': 'chunked',
+286 silly get     connection: 'keep-alive',
+286 silly get     'set-cookie':
+286 silly get      [ '__cfduid=dda1426bda9933a9e0e39ef17446acba01567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+286 silly get     'cf-cache-status': 'HIT',
+286 silly get     'cache-control': 'max-age=300',
+286 silly get     'cf-ray': '50d789a778286191-BCN',
+286 silly get     etag: 'W/"e4cd4dc72469c3ccfc9b491f8708714b"',
+286 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+286 silly get     'last-modified': 'Sat, 05 Jan 2019 02:59:22 GMT',
+286 silly get     vary: 'accept-encoding, accept',
+286 silly get     'x-amz-meta-rev': '29-ad5366a07af8b37301ee1b9bd2802cf3',
+286 silly get     server: 'cloudflare',
+286 silly get     'content-encoding': 'gzip' } ]
+287 verbose get saving pause-stream to /home/aleixgil/.npm/registry.npmjs.org/pause-stream/.cache.json
+288 silly resolveWithNewModule stream-combiner@0.2.2 checking installable status
+289 silly cache add args [ 'stream-combiner@^0.2.2', null ]
+290 verbose cache add spec stream-combiner@^0.2.2
+291 silly cache add parsed spec Result {
+291 silly cache add   raw: 'stream-combiner@^0.2.2',
+291 silly cache add   scope: null,
+291 silly cache add   name: 'stream-combiner',
+291 silly cache add   rawSpec: '^0.2.2',
+291 silly cache add   spec: '>=0.2.2 <0.3.0',
+291 silly cache add   type: 'range' }
+292 silly addNamed stream-combiner@>=0.2.2 <0.3.0
+293 verbose addNamed ">=0.2.2 <0.3.0" is a valid semver range for stream-combiner
+294 silly addNameRange { name: 'stream-combiner',
+294 silly addNameRange   range: '>=0.2.2 <0.3.0',
+294 silly addNameRange   hasData: false }
+295 silly mapToRegistry name stream-combiner
+296 silly mapToRegistry using default registry
+297 silly mapToRegistry registry https://registry.npmjs.org/
+298 silly mapToRegistry uri https://registry.npmjs.org/stream-combiner
+299 verbose addNameRange registry:https://registry.npmjs.org/stream-combiner not in flight; fetching
+300 http 200 https://registry.npmjs.org/through
+301 verbose headers { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+301 verbose headers   'content-type': 'application/json',
+301 verbose headers   'transfer-encoding': 'chunked',
+301 verbose headers   connection: 'keep-alive',
+301 verbose headers   'set-cookie':
+301 verbose headers    [ '__cfduid=d8598a590adb0e17d59b54ff3f4a93a2d1567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+301 verbose headers   'cf-cache-status': 'HIT',
+301 verbose headers   'cache-control': 'max-age=300',
+301 verbose headers   'cf-ray': '50d789a77f94614f-BCN',
+301 verbose headers   etag: 'W/"cc5958d20a8a4a9cca39fa503a6dda17"',
+301 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+301 verbose headers   'last-modified': 'Sat, 05 Jan 2019 15:16:42 GMT',
+301 verbose headers   vary: 'accept-encoding, accept',
+301 verbose headers   'x-amz-meta-rev': '213-5d7340bbe4bbc51bb0e2a4a9044abca2',
+301 verbose headers   server: 'cloudflare',
+301 verbose headers   'content-encoding': 'gzip' }
+302 silly get cb [ 200,
+302 silly get   { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+302 silly get     'content-type': 'application/json',
+302 silly get     'transfer-encoding': 'chunked',
+302 silly get     connection: 'keep-alive',
+302 silly get     'set-cookie':
+302 silly get      [ '__cfduid=d8598a590adb0e17d59b54ff3f4a93a2d1567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+302 silly get     'cf-cache-status': 'HIT',
+302 silly get     'cache-control': 'max-age=300',
+302 silly get     'cf-ray': '50d789a77f94614f-BCN',
+302 silly get     etag: 'W/"cc5958d20a8a4a9cca39fa503a6dda17"',
+302 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+302 silly get     'last-modified': 'Sat, 05 Jan 2019 15:16:42 GMT',
+302 silly get     vary: 'accept-encoding, accept',
+302 silly get     'x-amz-meta-rev': '213-5d7340bbe4bbc51bb0e2a4a9044abca2',
+302 silly get     server: 'cloudflare',
+302 silly get     'content-encoding': 'gzip' } ]
+303 verbose get saving through to /home/aleixgil/.npm/registry.npmjs.org/through/.cache.json
+304 http fetch 200 https://registry.npmjs.org/from/-/from-0.1.7.tgz
+305 silly resolveWithNewModule split@1.0.1 checking installable status
+306 silly cache add args [ 'split@^1.0.1', null ]
+307 verbose cache add spec split@^1.0.1
+308 silly cache add parsed spec Result {
+308 silly cache add   raw: 'split@^1.0.1',
+308 silly cache add   scope: null,
+308 silly cache add   name: 'split',
+308 silly cache add   rawSpec: '^1.0.1',
+308 silly cache add   spec: '>=1.0.1 <2.0.0',
+308 silly cache add   type: 'range' }
+309 silly addNamed split@>=1.0.1 <2.0.0
+310 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for split
+311 silly addNameRange { name: 'split', range: '>=1.0.1 <2.0.0', hasData: false }
+312 silly mapToRegistry name split
+313 silly mapToRegistry using default registry
+314 silly mapToRegistry registry https://registry.npmjs.org/
+315 silly mapToRegistry uri https://registry.npmjs.org/split
+316 verbose addNameRange registry:https://registry.npmjs.org/split not in flight; fetching
+317 silly resolveWithNewModule map-stream@0.0.7 checking installable status
+318 silly cache add args [ 'map-stream@0.0.7', null ]
+319 verbose cache add spec map-stream@0.0.7
+320 silly cache add parsed spec Result {
+320 silly cache add   raw: 'map-stream@0.0.7',
+320 silly cache add   scope: null,
+320 silly cache add   name: 'map-stream',
+320 silly cache add   rawSpec: '0.0.7',
+320 silly cache add   spec: '0.0.7',
+320 silly cache add   type: 'version' }
+321 silly addNamed map-stream@0.0.7
+322 verbose addNamed "0.0.7" is a plain semver version for map-stream
+323 silly mapToRegistry name map-stream
+324 silly mapToRegistry using default registry
+325 silly mapToRegistry registry https://registry.npmjs.org/
+326 silly mapToRegistry uri https://registry.npmjs.org/map-stream
+327 verbose addNameVersion registry:https://registry.npmjs.org/map-stream not in flight; fetching
+328 verbose get https://registry.npmjs.org/stream-combiner not expired, no request
+329 silly addNameRange number 2 { name: 'stream-combiner',
+329 silly addNameRange   range: '>=0.2.2 <0.3.0',
+329 silly addNameRange   hasData: true }
+330 silly addNameRange versions [ 'stream-combiner',
+330 silly addNameRange   [ '0.0.0',
+330 silly addNameRange     '0.0.1',
+330 silly addNameRange     '0.0.2',
+330 silly addNameRange     '0.0.4',
+330 silly addNameRange     '0.1.0',
+330 silly addNameRange     '0.2.0',
+330 silly addNameRange     '0.2.1',
+330 silly addNameRange     '0.2.2' ] ]
+331 silly addNamed stream-combiner@0.2.2
+332 verbose addNamed "0.2.2" is a plain semver version for stream-combiner
+333 silly resolveWithNewModule pause-stream@0.0.11 checking installable status
+334 silly cache add args [ 'pause-stream@^0.0.11', null ]
+335 verbose cache add spec pause-stream@^0.0.11
+336 silly cache add parsed spec Result {
+336 silly cache add   raw: 'pause-stream@^0.0.11',
+336 silly cache add   scope: null,
+336 silly cache add   name: 'pause-stream',
+336 silly cache add   rawSpec: '^0.0.11',
+336 silly cache add   spec: '>=0.0.11 <0.0.12',
+336 silly cache add   type: 'range' }
+337 silly addNamed pause-stream@>=0.0.11 <0.0.12
+338 verbose addNamed ">=0.0.11 <0.0.12" is a valid semver range for pause-stream
+339 silly addNameRange { name: 'pause-stream',
+339 silly addNameRange   range: '>=0.0.11 <0.0.12',
+339 silly addNameRange   hasData: false }
+340 silly mapToRegistry name pause-stream
+341 silly mapToRegistry using default registry
+342 silly mapToRegistry registry https://registry.npmjs.org/
+343 silly mapToRegistry uri https://registry.npmjs.org/pause-stream
+344 verbose addNameRange registry:https://registry.npmjs.org/pause-stream not in flight; fetching
+345 silly mapToRegistry name stream-combiner
+346 silly mapToRegistry using default registry
+347 silly mapToRegistry registry https://registry.npmjs.org/
+348 silly mapToRegistry uri https://registry.npmjs.org/stream-combiner
+349 verbose addRemoteTarball https://registry.npmjs.org/stream-combiner/-/stream-combiner-0.2.2.tgz not in flight; adding
+350 verbose addRemoteTarball [ 'https://registry.npmjs.org/stream-combiner/-/stream-combiner-0.2.2.tgz',
+350 verbose addRemoteTarball   'aec8cbac177b56b6f4fa479ced8c1912cee52858' ]
+351 silly fetchAndShaCheck shasum 83c60afc58b9c56997007ed1a768b3ab303a44fe
+352 verbose get https://registry.npmjs.org/split not expired, no request
+353 silly addNameRange number 2 { name: 'split', range: '>=1.0.1 <2.0.0', hasData: true }
+354 silly addNameRange versions [ 'split',
+354 silly addNameRange   [ '0.0.0',
+354 silly addNameRange     '0.1.0',
+354 silly addNameRange     '0.1.1',
+354 silly addNameRange     '0.1.2',
+354 silly addNameRange     '0.2.0',
+354 silly addNameRange     '0.2.1',
+354 silly addNameRange     '0.2.3',
+354 silly addNameRange     '0.2.4',
+354 silly addNameRange     '0.2.5',
+354 silly addNameRange     '0.2.6',
+354 silly addNameRange     '0.2.7',
+354 silly addNameRange     '0.2.8',
+354 silly addNameRange     '0.2.9',
+354 silly addNameRange     '0.2.10',
+354 silly addNameRange     '0.3.0',
+354 silly addNameRange     '0.3.1',
+354 silly addNameRange     '0.3.2',
+354 silly addNameRange     '0.3.3',
+354 silly addNameRange     '1.0.0',
+354 silly addNameRange     '1.0.1' ] ]
+355 silly addNamed split@1.0.1
+356 verbose addNamed "1.0.1" is a plain semver version for split
+357 info retry fetch attempt 1 at 18:07:21
+358 info attempt registry request try #1 at 18:07:21
+359 http fetch GET https://registry.npmjs.org/stream-combiner/-/stream-combiner-0.2.2.tgz
+360 verbose get https://registry.npmjs.org/map-stream not expired, no request
+361 silly mapToRegistry name split
+362 silly mapToRegistry using default registry
+363 silly mapToRegistry registry https://registry.npmjs.org/
+364 silly mapToRegistry uri https://registry.npmjs.org/split
+365 verbose addRemoteTarball https://registry.npmjs.org/split/-/split-1.0.1.tgz not in flight; adding
+366 verbose addRemoteTarball [ 'https://registry.npmjs.org/split/-/split-1.0.1.tgz',
+366 verbose addRemoteTarball   '605bd9be303aa59fb35f9229fbea0ddec9ea07d9' ]
+367 verbose addTmpTarball /tmp/npm-20350-7eca657c/registry.npmjs.org/from/-/from-0.1.7.tgz not in flight; adding
+368 verbose addTmpTarball already have metadata; skipping unpack for from@0.1.7
+369 verbose get https://registry.npmjs.org/pause-stream not expired, no request
+370 silly addNameRange number 2 { name: 'pause-stream',
+370 silly addNameRange   range: '>=0.0.11 <0.0.12',
+370 silly addNameRange   hasData: true }
+371 silly addNameRange versions [ 'pause-stream',
+371 silly addNameRange   [ '0.0.0',
+371 silly addNameRange     '0.0.2',
+371 silly addNameRange     '0.0.3',
+371 silly addNameRange     '0.0.4',
+371 silly addNameRange     '0.0.5',
+371 silly addNameRange     '0.0.6',
+371 silly addNameRange     '0.0.7',
+371 silly addNameRange     '0.0.8',
+371 silly addNameRange     '0.0.9',
+371 silly addNameRange     '0.0.10',
+371 silly addNameRange     '0.0.11' ] ]
+372 silly addNamed pause-stream@0.0.11
+373 verbose addNamed "0.0.11" is a plain semver version for pause-stream
+374 silly mapToRegistry name map-stream
+375 silly mapToRegistry using default registry
+376 silly mapToRegistry registry https://registry.npmjs.org/
+377 silly mapToRegistry uri https://registry.npmjs.org/map-stream
+378 verbose addRemoteTarball https://registry.npmjs.org/map-stream/-/map-stream-0.0.7.tgz not in flight; adding
+379 verbose addRemoteTarball [ 'https://registry.npmjs.org/map-stream/-/map-stream-0.0.7.tgz',
+379 verbose addRemoteTarball   '8a1f07896d82b10926bd3744a2420009f88974a8' ]
+380 silly mapToRegistry name pause-stream
+381 silly mapToRegistry using default registry
+382 silly mapToRegistry registry https://registry.npmjs.org/
+383 silly mapToRegistry uri https://registry.npmjs.org/pause-stream
+384 verbose addRemoteTarball https://registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz not in flight; adding
+385 verbose addRemoteTarball [ 'https://registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz',
+385 verbose addRemoteTarball   'fe5a34b0cbce12b5aa6a2b403ee2e73b602f1445' ]
+386 http fetch 200 https://registry.npmjs.org/duplexer/-/duplexer-0.1.1.tgz
+387 silly resolveWithNewModule through@2.3.8 checking installable status
+388 silly cache add args [ 'through@^2.3.8', null ]
+389 verbose cache add spec through@^2.3.8
+390 silly cache add parsed spec Result {
+390 silly cache add   raw: 'through@^2.3.8',
+390 silly cache add   scope: null,
+390 silly cache add   name: 'through',
+390 silly cache add   rawSpec: '^2.3.8',
+390 silly cache add   spec: '>=2.3.8 <3.0.0',
+390 silly cache add   type: 'range' }
+391 silly addNamed through@>=2.3.8 <3.0.0
+392 verbose addNamed ">=2.3.8 <3.0.0" is a valid semver range for through
+393 silly addNameRange { name: 'through', range: '>=2.3.8 <3.0.0', hasData: false }
+394 silly mapToRegistry name through
+395 silly mapToRegistry using default registry
+396 silly mapToRegistry registry https://registry.npmjs.org/
+397 silly mapToRegistry uri https://registry.npmjs.org/through
+398 verbose addNameRange registry:https://registry.npmjs.org/through not in flight; fetching
+399 info retry fetch attempt 1 at 18:07:21
+400 info attempt registry request try #1 at 18:07:21
+401 http fetch GET https://registry.npmjs.org/split/-/split-1.0.1.tgz
+402 info retry fetch attempt 1 at 18:07:21
+403 info attempt registry request try #1 at 18:07:21
+404 http fetch GET https://registry.npmjs.org/map-stream/-/map-stream-0.0.7.tgz
+405 info retry fetch attempt 1 at 18:07:21
+406 info attempt registry request try #1 at 18:07:21
+407 http fetch GET https://registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz
+408 silly fetchAndShaCheck shasum ace6ff808c1ce66b57d1ebf97977acb02334cfc1
+409 verbose get https://registry.npmjs.org/through not expired, no request
+410 silly addNameRange number 2 { name: 'through', range: '>=2.3.8 <3.0.0', hasData: true }
+411 silly addNameRange versions [ 'through',
+411 silly addNameRange   [ '0.0.1',
+411 silly addNameRange     '0.0.2',
+411 silly addNameRange     '0.0.3',
+411 silly addNameRange     '0.0.4',
+411 silly addNameRange     '0.1.0',
+411 silly addNameRange     '0.1.1',
+411 silly addNameRange     '0.1.2',
+411 silly addNameRange     '0.1.3',
+411 silly addNameRange     '0.1.4',
+411 silly addNameRange     '1.0.0',
+411 silly addNameRange     '1.1.0',
+411 silly addNameRange     '1.1.1',
+411 silly addNameRange     '1.1.2',
+411 silly addNameRange     '2.0.0',
+411 silly addNameRange     '2.1.0',
+411 silly addNameRange     '2.2.0',
+411 silly addNameRange     '2.2.1',
+411 silly addNameRange     '2.2.2',
+411 silly addNameRange     '2.2.4',
+411 silly addNameRange     '2.2.5',
+411 silly addNameRange     '2.2.6',
+411 silly addNameRange     '2.2.7',
+411 silly addNameRange     '2.3.1',
+411 silly addNameRange     '2.3.2',
+411 silly addNameRange     '2.3.3',
+411 silly addNameRange     '2.3.4',
+411 silly addNameRange     '2.3.6',
+411 silly addNameRange     '2.3.7',
+411 silly addNameRange     '2.3.8' ] ]
+412 silly addNamed through@2.3.8
+413 verbose addNamed "2.3.8" is a plain semver version for through
+414 silly mapToRegistry name through
+415 silly mapToRegistry using default registry
+416 silly mapToRegistry registry https://registry.npmjs.org/
+417 silly mapToRegistry uri https://registry.npmjs.org/through
+418 verbose addRemoteTarball https://registry.npmjs.org/through/-/through-2.3.8.tgz not in flight; adding
+419 verbose addRemoteTarball [ 'https://registry.npmjs.org/through/-/through-2.3.8.tgz',
+419 verbose addRemoteTarball   '0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5' ]
+420 verbose addTmpTarball /tmp/npm-20350-7eca657c/registry.npmjs.org/duplexer/-/duplexer-0.1.1.tgz not in flight; adding
+421 verbose addTmpTarball already have metadata; skipping unpack for duplexer@0.1.1
+422 info retry fetch attempt 1 at 18:07:21
+423 info attempt registry request try #1 at 18:07:21
+424 http fetch GET https://registry.npmjs.org/through/-/through-2.3.8.tgz
+425 silly cache afterAdd from@0.1.7
+426 verbose afterAdd /home/aleixgil/.npm/from/0.1.7/package/package.json not in flight; writing
+427 verbose afterAdd /home/aleixgil/.npm/from/0.1.7/package/package.json written
+428 http fetch 200 https://registry.npmjs.org/stream-combiner/-/stream-combiner-0.2.2.tgz
+429 silly cache afterAdd duplexer@0.1.1
+430 verbose afterAdd /home/aleixgil/.npm/duplexer/0.1.1/package/package.json not in flight; writing
+431 silly fetchAndShaCheck shasum aec8cbac177b56b6f4fa479ced8c1912cee52858
+432 verbose afterAdd /home/aleixgil/.npm/duplexer/0.1.1/package/package.json written
+433 verbose addTmpTarball /tmp/npm-20350-7eca657c/registry.npmjs.org/stream-combiner/-/stream-combiner-0.2.2.tgz not in flight; adding
+434 verbose addTmpTarball already have metadata; skipping unpack for stream-combiner@0.2.2
+435 http fetch 200 https://registry.npmjs.org/split/-/split-1.0.1.tgz
+436 silly fetchAndShaCheck shasum 605bd9be303aa59fb35f9229fbea0ddec9ea07d9
+437 http fetch 200 https://registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz
+438 verbose addTmpTarball /tmp/npm-20350-7eca657c/registry.npmjs.org/split/-/split-1.0.1.tgz not in flight; adding
+439 verbose addTmpTarball already have metadata; skipping unpack for split@1.0.1
+440 http fetch 200 https://registry.npmjs.org/map-stream/-/map-stream-0.0.7.tgz
+441 silly fetchAndShaCheck shasum fe5a34b0cbce12b5aa6a2b403ee2e73b602f1445
+442 silly fetchAndShaCheck shasum 8a1f07896d82b10926bd3744a2420009f88974a8
+443 verbose addTmpTarball /tmp/npm-20350-7eca657c/registry.npmjs.org/pause-stream/-/pause-stream-0.0.11.tgz not in flight; adding
+444 verbose addTmpTarball already have metadata; skipping unpack for pause-stream@0.0.11
+445 http fetch 200 https://registry.npmjs.org/through/-/through-2.3.8.tgz
+446 verbose addTmpTarball /tmp/npm-20350-7eca657c/registry.npmjs.org/map-stream/-/map-stream-0.0.7.tgz not in flight; adding
+447 verbose addTmpTarball already have metadata; skipping unpack for map-stream@0.0.7
+448 silly fetchAndShaCheck shasum 0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5
+449 silly cache afterAdd stream-combiner@0.2.2
+450 verbose afterAdd /home/aleixgil/.npm/stream-combiner/0.2.2/package/package.json not in flight; writing
+451 verbose addTmpTarball /tmp/npm-20350-7eca657c/registry.npmjs.org/through/-/through-2.3.8.tgz not in flight; adding
+452 verbose addTmpTarball already have metadata; skipping unpack for through@2.3.8
+453 verbose afterAdd /home/aleixgil/.npm/stream-combiner/0.2.2/package/package.json written
+454 silly cache afterAdd split@1.0.1
+455 verbose afterAdd /home/aleixgil/.npm/split/1.0.1/package/package.json not in flight; writing
+456 silly cache afterAdd pause-stream@0.0.11
+457 verbose afterAdd /home/aleixgil/.npm/pause-stream/0.0.11/package/package.json not in flight; writing
+458 verbose afterAdd /home/aleixgil/.npm/split/1.0.1/package/package.json written
+459 silly cache afterAdd map-stream@0.0.7
+460 verbose afterAdd /home/aleixgil/.npm/map-stream/0.0.7/package/package.json not in flight; writing
+461 verbose afterAdd /home/aleixgil/.npm/pause-stream/0.0.11/package/package.json written
+462 verbose afterAdd /home/aleixgil/.npm/map-stream/0.0.7/package/package.json written
+463 silly cache afterAdd through@2.3.8
+464 verbose afterAdd /home/aleixgil/.npm/through/2.3.8/package/package.json not in flight; writing
+465 verbose afterAdd /home/aleixgil/.npm/through/2.3.8/package/package.json written
+466 silly fetchNamedPackageData isexe
+467 silly mapToRegistry name isexe
+468 silly mapToRegistry using default registry
+469 silly mapToRegistry registry https://registry.npmjs.org/
+470 silly mapToRegistry uri https://registry.npmjs.org/isexe
+471 verbose request uri https://registry.npmjs.org/isexe
+472 verbose request no auth needed
+473 info attempt registry request try #1 at 18:07:21
+474 verbose etag W/"831199fac463b1aabcaead694e289539"
+475 verbose lastModified Sun, 27 May 2018 05:00:28 GMT
+476 http request GET https://registry.npmjs.org/isexe
+477 http 304 https://registry.npmjs.org/isexe
+478 verbose headers { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+478 verbose headers   connection: 'keep-alive',
+478 verbose headers   'set-cookie':
+478 verbose headers    [ '__cfduid=dc97f57f8200d659db472ec2be404d2aa1567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+478 verbose headers   'cf-cache-status': 'HIT',
+478 verbose headers   'cache-control': 'max-age=300',
+478 verbose headers   'cf-ray': '50d789a84cd1610d-BCN',
+478 verbose headers   etag: '"831199fac463b1aabcaead694e289539"',
+478 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+478 verbose headers   'last-modified': 'Sun, 27 May 2018 05:00:28 GMT',
+478 verbose headers   vary: 'accept-encoding, accept',
+478 verbose headers   server: 'cloudflare' }
+479 silly get cb [ 304,
+479 silly get   { date: 'Wed, 28 Aug 2019 16:07:21 GMT',
+479 silly get     connection: 'keep-alive',
+479 silly get     'set-cookie':
+479 silly get      [ '__cfduid=dc97f57f8200d659db472ec2be404d2aa1567008441; expires=Thu, 27-Aug-20 16:07:21 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+479 silly get     'cf-cache-status': 'HIT',
+479 silly get     'cache-control': 'max-age=300',
+479 silly get     'cf-ray': '50d789a84cd1610d-BCN',
+479 silly get     etag: '"831199fac463b1aabcaead694e289539"',
+479 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+479 silly get     'last-modified': 'Sun, 27 May 2018 05:00:28 GMT',
+479 silly get     vary: 'accept-encoding, accept',
+479 silly get     server: 'cloudflare' } ]
+480 verbose etag https://registry.npmjs.org/isexe from cache
+481 verbose get saving isexe to /home/aleixgil/.npm/registry.npmjs.org/isexe/.cache.json
+482 silly resolveWithNewModule isexe@2.0.0 checking installable status
+483 silly cache add args [ 'isexe@^2.0.0', null ]
+484 verbose cache add spec isexe@^2.0.0
+485 silly cache add parsed spec Result {
+485 silly cache add   raw: 'isexe@^2.0.0',
+485 silly cache add   scope: null,
+485 silly cache add   name: 'isexe',
+485 silly cache add   rawSpec: '^2.0.0',
+485 silly cache add   spec: '>=2.0.0 <3.0.0',
+485 silly cache add   type: 'range' }
+486 silly addNamed isexe@>=2.0.0 <3.0.0
+487 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for isexe
+488 silly addNameRange { name: 'isexe', range: '>=2.0.0 <3.0.0', hasData: false }
+489 silly mapToRegistry name isexe
+490 silly mapToRegistry using default registry
+491 silly mapToRegistry registry https://registry.npmjs.org/
+492 silly mapToRegistry uri https://registry.npmjs.org/isexe
+493 verbose addNameRange registry:https://registry.npmjs.org/isexe not in flight; fetching
+494 verbose get https://registry.npmjs.org/isexe not expired, no request
+495 silly addNameRange number 2 { name: 'isexe', range: '>=2.0.0 <3.0.0', hasData: true }
+496 silly addNameRange versions [ 'isexe',
+496 silly addNameRange   [ '1.0.0', '1.0.1', '1.1.0', '1.1.1', '1.1.2', '2.0.0' ] ]
+497 silly addNamed isexe@2.0.0
+498 verbose addNamed "2.0.0" is a plain semver version for isexe
+499 silly cache afterAdd isexe@2.0.0
+500 verbose afterAdd /home/aleixgil/.npm/isexe/2.0.0/package/package.json not in flight; writing
+501 verbose afterAdd /home/aleixgil/.npm/isexe/2.0.0/package/package.json written
+502 silly loadAllDepsIntoIdealTree Finishing
+503 silly idealTree:prePrune aleixgil
+503 silly idealTree:prePrune ├── duplexer@0.1.1
+503 silly idealTree:prePrune ├── event-stream@3.3.5
+503 silly idealTree:prePrune ├── from@0.1.7
+503 silly idealTree:prePrune ├── isexe@2.0.0
+503 silly idealTree:prePrune ├── map-stream@0.0.7
+503 silly idealTree:prePrune ├── mpg321@0.1.5
+503 silly idealTree:prePrune ├── pause-stream@0.0.11
+503 silly idealTree:prePrune ├── reactn@2.1.2
+503 silly idealTree:prePrune ├── split@1.0.1
+503 silly idealTree:prePrune ├── stream-combiner@0.2.2
+503 silly idealTree:prePrune ├── through@2.3.8
+503 silly idealTree:prePrune ├── use-force-update@1.0.5
+503 silly idealTree:prePrune └── which@1.3.1
+504 silly loadIdealTree Finishing
+505 silly currentTree aleixgil
+505 silly currentTree ├── reactn@2.1.2
+505 silly currentTree └── use-force-update@1.0.5
+506 silly idealTree aleixgil
+506 silly idealTree ├── duplexer@0.1.1
+506 silly idealTree ├── event-stream@3.3.5
+506 silly idealTree ├── from@0.1.7
+506 silly idealTree ├── isexe@2.0.0
+506 silly idealTree ├── map-stream@0.0.7
+506 silly idealTree ├── mpg321@0.1.5
+506 silly idealTree ├── pause-stream@0.0.11
+506 silly idealTree ├── reactn@2.1.2
+506 silly idealTree ├── split@1.0.1
+506 silly idealTree ├── stream-combiner@0.2.2
+506 silly idealTree ├── through@2.3.8
+506 silly idealTree ├── use-force-update@1.0.5
+506 silly idealTree └── which@1.3.1
+507 silly generateActionsToTake Starting
+508 silly install generateActionsToTake
+509 silly generateActionsToTake Finishing
+510 silly diffTrees action count 12
+511 silly diffTrees add duplexer@0.1.1
+512 silly diffTrees add from@0.1.7
+513 silly diffTrees add isexe@2.0.0
+514 silly diffTrees add map-stream@0.0.7
+515 silly diffTrees add through@2.3.8
+516 silly diffTrees add stream-combiner@0.2.2
+517 silly diffTrees add split@1.0.1
+518 silly diffTrees add pause-stream@0.0.11
+519 silly diffTrees add event-stream@3.3.5
+520 silly diffTrees add which@1.3.1
+521 silly diffTrees add mpg321@0.1.5
+522 silly diffTrees update reactn@2.1.2
+523 silly decomposeActions action count 96
+524 silly decomposeActions fetch duplexer@0.1.1
+525 silly decomposeActions extract duplexer@0.1.1
+526 silly decomposeActions test duplexer@0.1.1
+527 silly decomposeActions preinstall duplexer@0.1.1
+528 silly decomposeActions build duplexer@0.1.1
+529 silly decomposeActions install duplexer@0.1.1
+530 silly decomposeActions postinstall duplexer@0.1.1
+531 silly decomposeActions finalize duplexer@0.1.1
+532 silly decomposeActions fetch from@0.1.7
+533 silly decomposeActions extract from@0.1.7
+534 silly decomposeActions test from@0.1.7
+535 silly decomposeActions preinstall from@0.1.7
+536 silly decomposeActions build from@0.1.7
+537 silly decomposeActions install from@0.1.7
+538 silly decomposeActions postinstall from@0.1.7
+539 silly decomposeActions finalize from@0.1.7
+540 silly decomposeActions fetch isexe@2.0.0
+541 silly decomposeActions extract isexe@2.0.0
+542 silly decomposeActions test isexe@2.0.0
+543 silly decomposeActions preinstall isexe@2.0.0
+544 silly decomposeActions build isexe@2.0.0
+545 silly decomposeActions install isexe@2.0.0
+546 silly decomposeActions postinstall isexe@2.0.0
+547 silly decomposeActions finalize isexe@2.0.0
+548 silly decomposeActions fetch map-stream@0.0.7
+549 silly decomposeActions extract map-stream@0.0.7
+550 silly decomposeActions test map-stream@0.0.7
+551 silly decomposeActions preinstall map-stream@0.0.7
+552 silly decomposeActions build map-stream@0.0.7
+553 silly decomposeActions install map-stream@0.0.7
+554 silly decomposeActions postinstall map-stream@0.0.7
+555 silly decomposeActions finalize map-stream@0.0.7
+556 silly decomposeActions fetch through@2.3.8
+557 silly decomposeActions extract through@2.3.8
+558 silly decomposeActions test through@2.3.8
+559 silly decomposeActions preinstall through@2.3.8
+560 silly decomposeActions build through@2.3.8
+561 silly decomposeActions install through@2.3.8
+562 silly decomposeActions postinstall through@2.3.8
+563 silly decomposeActions finalize through@2.3.8
+564 silly decomposeActions fetch stream-combiner@0.2.2
+565 silly decomposeActions extract stream-combiner@0.2.2
+566 silly decomposeActions test stream-combiner@0.2.2
+567 silly decomposeActions preinstall stream-combiner@0.2.2
+568 silly decomposeActions build stream-combiner@0.2.2
+569 silly decomposeActions install stream-combiner@0.2.2
+570 silly decomposeActions postinstall stream-combiner@0.2.2
+571 silly decomposeActions finalize stream-combiner@0.2.2
+572 silly decomposeActions fetch split@1.0.1
+573 silly decomposeActions extract split@1.0.1
+574 silly decomposeActions test split@1.0.1
+575 silly decomposeActions preinstall split@1.0.1
+576 silly decomposeActions build split@1.0.1
+577 silly decomposeActions install split@1.0.1
+578 silly decomposeActions postinstall split@1.0.1
+579 silly decomposeActions finalize split@1.0.1
+580 silly decomposeActions fetch pause-stream@0.0.11
+581 silly decomposeActions extract pause-stream@0.0.11
+582 silly decomposeActions test pause-stream@0.0.11
+583 silly decomposeActions preinstall pause-stream@0.0.11
+584 silly decomposeActions build pause-stream@0.0.11
+585 silly decomposeActions install pause-stream@0.0.11
+586 silly decomposeActions postinstall pause-stream@0.0.11
+587 silly decomposeActions finalize pause-stream@0.0.11
+588 silly decomposeActions fetch event-stream@3.3.5
+589 silly decomposeActions extract event-stream@3.3.5
+590 silly decomposeActions test event-stream@3.3.5
+591 silly decomposeActions preinstall event-stream@3.3.5
+592 silly decomposeActions build event-stream@3.3.5
+593 silly decomposeActions install event-stream@3.3.5
+594 silly decomposeActions postinstall event-stream@3.3.5
+595 silly decomposeActions finalize event-stream@3.3.5
+596 silly decomposeActions fetch which@1.3.1
+597 silly decomposeActions extract which@1.3.1
+598 silly decomposeActions test which@1.3.1
+599 silly decomposeActions preinstall which@1.3.1
+600 silly decomposeActions build which@1.3.1
+601 silly decomposeActions install which@1.3.1
+602 silly decomposeActions postinstall which@1.3.1
+603 silly decomposeActions finalize which@1.3.1
+604 silly decomposeActions fetch mpg321@0.1.5
+605 silly decomposeActions extract mpg321@0.1.5
+606 silly decomposeActions test mpg321@0.1.5
+607 silly decomposeActions preinstall mpg321@0.1.5
+608 silly decomposeActions build mpg321@0.1.5
+609 silly decomposeActions install mpg321@0.1.5
+610 silly decomposeActions postinstall mpg321@0.1.5
+611 silly decomposeActions finalize mpg321@0.1.5
+612 silly decomposeActions fetch reactn@2.1.2
+613 silly decomposeActions extract reactn@2.1.2
+614 silly decomposeActions test reactn@2.1.2
+615 silly decomposeActions preinstall reactn@2.1.2
+616 silly decomposeActions build reactn@2.1.2
+617 silly decomposeActions install reactn@2.1.2
+618 silly decomposeActions postinstall reactn@2.1.2
+619 silly decomposeActions finalize reactn@2.1.2
+620 silly executeActions Starting
+621 silly install executeActions
+622 silly doSerial global-install 0
+623 silly doParallel fetch 12
+624 verbose lock using /home/aleixgil/.npm/_locks/staging-be82f8cd8e6ba370.lock for /home/aleixgil/node_modules/.staging
+625 silly doParallel extract 12
+626 silly extract duplexer@0.1.1
+627 silly extract from@0.1.7
+628 silly extract isexe@2.0.0
+629 silly extract map-stream@0.0.7
+630 silly extract through@2.3.8
+631 silly extract stream-combiner@0.2.2
+632 silly extract split@1.0.1
+633 silly extract pause-stream@0.0.11
+634 silly extract event-stream@3.3.5
+635 silly extract which@1.3.1
+636 silly extract mpg321@0.1.5
+637 silly extract reactn@2.1.2
+638 verbose unbuild node_modules/.staging/duplexer-26233d39
+639 verbose unbuild node_modules/.staging/from-01f61158
+640 verbose unbuild node_modules/.staging/isexe-9163d648
+641 verbose unbuild node_modules/.staging/map-stream-1f4e48da
+642 verbose unbuild node_modules/.staging/through-3b438eec
+643 verbose unbuild node_modules/.staging/stream-combiner-3ba2c35a
+644 verbose unbuild node_modules/.staging/split-a0b3c198
+645 verbose unbuild node_modules/.staging/pause-stream-e5eff5bc
+646 verbose unbuild node_modules/.staging/event-stream-7dac5de4
+647 verbose unbuild node_modules/.staging/mpg321-556f07d4
+648 verbose unbuild node_modules/.staging/which-f56d6c91
+649 silly gentlyRm /home/aleixgil/node_modules/.staging/duplexer-26233d39 is being purged from base /home/aleixgil
+650 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/duplexer-26233d39
+651 silly gentlyRm /home/aleixgil/node_modules/.staging/from-01f61158 is being purged from base /home/aleixgil
+652 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/from-01f61158
+653 silly gentlyRm /home/aleixgil/node_modules/.staging/isexe-9163d648 is being purged from base /home/aleixgil
+654 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/isexe-9163d648
+655 silly gentlyRm /home/aleixgil/node_modules/.staging/map-stream-1f4e48da is being purged from base /home/aleixgil
+656 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/map-stream-1f4e48da
+657 silly gentlyRm /home/aleixgil/node_modules/.staging/through-3b438eec is being purged from base /home/aleixgil
+658 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/through-3b438eec
+659 silly gentlyRm /home/aleixgil/node_modules/.staging/stream-combiner-3ba2c35a is being purged from base /home/aleixgil
+660 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/stream-combiner-3ba2c35a
+661 silly gentlyRm /home/aleixgil/node_modules/.staging/split-a0b3c198 is being purged from base /home/aleixgil
+662 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/split-a0b3c198
+663 silly gentlyRm /home/aleixgil/node_modules/.staging/pause-stream-e5eff5bc is being purged from base /home/aleixgil
+664 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/pause-stream-e5eff5bc
+665 silly gentlyRm /home/aleixgil/node_modules/.staging/event-stream-7dac5de4 is being purged from base /home/aleixgil
+666 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/event-stream-7dac5de4
+667 silly gentlyRm /home/aleixgil/node_modules/.staging/mpg321-556f07d4 is being purged from base /home/aleixgil
+668 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/mpg321-556f07d4
+669 verbose tar unpack /home/aleixgil/.npm/duplexer/0.1.1/package.tgz
+670 verbose tar unpacking to /home/aleixgil/node_modules/.staging/duplexer-26233d39
+671 silly gentlyRm /home/aleixgil/node_modules/.staging/duplexer-26233d39 is being purged
+672 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/duplexer-26233d39
+673 verbose tar unpack /home/aleixgil/.npm/from/0.1.7/package.tgz
+674 verbose tar unpacking to /home/aleixgil/node_modules/.staging/from-01f61158
+675 silly gentlyRm /home/aleixgil/node_modules/.staging/from-01f61158 is being purged
+676 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/from-01f61158
+677 verbose tar unpack /home/aleixgil/.npm/isexe/2.0.0/package.tgz
+678 verbose tar unpacking to /home/aleixgil/node_modules/.staging/isexe-9163d648
+679 silly gentlyRm /home/aleixgil/node_modules/.staging/isexe-9163d648 is being purged
+680 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/isexe-9163d648
+681 verbose tar unpack /home/aleixgil/.npm/map-stream/0.0.7/package.tgz
+682 verbose tar unpacking to /home/aleixgil/node_modules/.staging/map-stream-1f4e48da
+683 silly gentlyRm /home/aleixgil/node_modules/.staging/map-stream-1f4e48da is being purged
+684 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/map-stream-1f4e48da
+685 verbose tar unpack /home/aleixgil/.npm/through/2.3.8/package.tgz
+686 verbose tar unpacking to /home/aleixgil/node_modules/.staging/through-3b438eec
+687 silly gentlyRm /home/aleixgil/node_modules/.staging/through-3b438eec is being purged
+688 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/through-3b438eec
+689 verbose tar unpack /home/aleixgil/.npm/stream-combiner/0.2.2/package.tgz
+690 verbose tar unpacking to /home/aleixgil/node_modules/.staging/stream-combiner-3ba2c35a
+691 silly gentlyRm /home/aleixgil/node_modules/.staging/stream-combiner-3ba2c35a is being purged
+692 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/stream-combiner-3ba2c35a
+693 verbose tar unpack /home/aleixgil/.npm/split/1.0.1/package.tgz
+694 verbose tar unpacking to /home/aleixgil/node_modules/.staging/split-a0b3c198
+695 silly gentlyRm /home/aleixgil/node_modules/.staging/split-a0b3c198 is being purged
+696 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/split-a0b3c198
+697 verbose tar unpack /home/aleixgil/.npm/pause-stream/0.0.11/package.tgz
+698 verbose tar unpacking to /home/aleixgil/node_modules/.staging/pause-stream-e5eff5bc
+699 silly gentlyRm /home/aleixgil/node_modules/.staging/pause-stream-e5eff5bc is being purged
+700 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/pause-stream-e5eff5bc
+701 verbose tar unpack /home/aleixgil/.npm/event-stream/3.3.5/package.tgz
+702 verbose tar unpacking to /home/aleixgil/node_modules/.staging/event-stream-7dac5de4
+703 silly gentlyRm /home/aleixgil/node_modules/.staging/event-stream-7dac5de4 is being purged
+704 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/event-stream-7dac5de4
+705 silly gentlyRm /home/aleixgil/node_modules/.staging/which-f56d6c91 is being purged from base /home/aleixgil
+706 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/which-f56d6c91
+707 verbose tar unpack /home/aleixgil/.npm/mpg321/0.1.5/package.tgz
+708 verbose tar unpacking to /home/aleixgil/node_modules/.staging/mpg321-556f07d4
+709 silly gentlyRm /home/aleixgil/node_modules/.staging/mpg321-556f07d4 is being purged
+710 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/mpg321-556f07d4
+711 silly gunzTarPerm modes [ '755', '644' ]
+712 silly gunzTarPerm modes [ '755', '644' ]
+713 silly gunzTarPerm modes [ '755', '644' ]
+714 silly gunzTarPerm modes [ '755', '644' ]
+715 silly gunzTarPerm modes [ '755', '644' ]
+716 silly gunzTarPerm modes [ '755', '644' ]
+717 silly gunzTarPerm modes [ '755', '644' ]
+718 silly gunzTarPerm modes [ '755', '644' ]
+719 silly gunzTarPerm modes [ '755', '644' ]
+720 verbose tar unpack /home/aleixgil/.npm/which/1.3.1/package.tgz
+721 verbose tar unpacking to /home/aleixgil/node_modules/.staging/which-f56d6c91
+722 silly gentlyRm /home/aleixgil/node_modules/.staging/which-f56d6c91 is being purged
+723 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/which-f56d6c91
+724 silly gunzTarPerm modes [ '755', '644' ]
+725 silly gunzTarPerm modes [ '755', '644' ]
+726 silly gunzTarPerm extractEntry package.json
+727 silly gunzTarPerm extractEntry package.json
+728 silly gunzTarPerm extractEntry package.json
+729 silly gunzTarPerm extractEntry package.json
+730 silly gunzTarPerm extractEntry package.json
+731 silly gunzTarPerm extractEntry package.json
+732 silly gunzTarPerm extractEntry package.json
+733 silly gunzTarPerm extractEntry package.json
+734 silly gunzTarPerm extractEntry package.json
+735 silly gunzTarPerm extractEntry package.json
+736 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+737 silly gunzTarPerm extractEntry package.json
+738 silly gunzTarPerm extractEntry .npmignore
+739 silly gunzTarPerm extractEntry README.md
+740 silly gunzTarPerm extractEntry .npmignore
+741 silly gunzTarPerm extractEntry index.js
+742 silly gunzTarPerm extractEntry .npmignore
+743 silly gunzTarPerm extractEntry README.md
+744 silly gunzTarPerm extractEntry .npmignore
+745 silly gunzTarPerm extractEntry LICENCE
+746 silly gunzTarPerm extractEntry index.js
+747 silly gunzTarPerm extractEntry .travis.yml
+748 silly gunzTarPerm extractEntry .npmignore
+749 silly gunzTarPerm extractEntry README.md
+750 silly gunzTarPerm extractEntry .npmignore
+751 silly gunzTarPerm extractEntry LICENCE
+752 silly gunzTarPerm extractEntry .npmignore
+753 silly gunzTarPerm extractEntry LICENSE
+754 silly gunzTarPerm extractEntry .travis.yml
+755 silly gunzTarPerm extractEntry index.js
+756 silly gunzTarPerm extractEntry README.md
+757 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+758 silly gunzTarPerm extractEntry LICENSE
+759 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+760 silly gunzTarPerm extractEntry CHANGELOG.md
+761 silly gunzTarPerm extractEntry LICENSE
+762 silly gunzTarPerm extractEntry LICENCE
+763 silly gunzTarPerm extractEntry index.js
+764 silly gunzTarPerm extractEntry .travis.yml
+765 silly gunzTarPerm extractEntry LICENSE.APACHE2
+766 silly gunzTarPerm extractEntry LICENSE
+767 silly gunzTarPerm extractEntry windows.js
+768 silly gunzTarPerm extractEntry index.js
+769 silly gunzTarPerm extractEntry .travis.yml
+770 silly gunzTarPerm extractEntry LICENSE.APACHE2
+771 silly gunzTarPerm extractEntry LICENSE.MIT
+772 silly gunzTarPerm extractEntry LICENSE
+773 silly gunzTarPerm extractEntry index.js
+774 silly gunzTarPerm extractEntry index.js
+775 silly gunzTarPerm extractEntry examples/pretty.js
+776 silly gunzTarPerm extractEntry index.js
+777 silly gunzTarPerm extractEntry readme.markdown
+778 silly gunzTarPerm extractEntry test/index.js
+779 silly gunzTarPerm extractEntry test/pause-end.js
+780 silly gunzTarPerm extractEntry LICENCE
+781 silly gunzTarPerm extractEntry readme.markdown
+782 silly gunzTarPerm extractEntry index.js
+783 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+784 silly gunzTarPerm extractEntry bin/check-mpg321.js
+785 silly gunzTarPerm modified mode [ 'bin/check-mpg321.js', 436, 420 ]
+786 silly gunzTarPerm extractEntry README.md
+787 silly gunzTarPerm extractEntry which.js
+788 verbose unbuild node_modules/.staging/reactn-190c5e0e
+789 silly gentlyRm /home/aleixgil/node_modules/.staging/reactn-190c5e0e is being purged from base /home/aleixgil
+790 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/reactn-190c5e0e
+791 verbose tar unpack /home/aleixgil/.npm/reactn/2.1.2/package.tgz
+792 verbose tar unpacking to /home/aleixgil/node_modules/.staging/reactn-190c5e0e
+793 silly gentlyRm /home/aleixgil/node_modules/.staging/reactn-190c5e0e is being purged
+794 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/reactn-190c5e0e
+795 silly gunzTarPerm modes [ '755', '644' ]
+796 silly gunzTarPerm extractEntry test/index.js
+797 silly gunzTarPerm extractEntry .travis.yml
+798 silly gunzTarPerm extractEntry LICENSE.MIT
+799 silly gunzTarPerm extractEntry readme.markdown
+800 silly gunzTarPerm extractEntry index.js
+801 silly gunzTarPerm extractEntry mode.js
+802 silly gunzTarPerm extractEntry examples/pretty.js
+803 silly gunzTarPerm extractEntry readme.markdown
+804 silly gunzTarPerm extractEntry .travis.yml
+805 silly gunzTarPerm extractEntry test/index.js
+806 silly gunzTarPerm extractEntry .travis.yml
+807 silly gunzTarPerm extractEntry readme.markdown
+808 silly gunzTarPerm extractEntry examples/data
+809 silly gunzTarPerm extractEntry readme.markdown
+810 silly gunzTarPerm extractEntry test/async.js
+811 silly gunzTarPerm extractEntry bin/which
+812 silly gunzTarPerm extractEntry test/index.js
+813 silly gunzTarPerm extractEntry test/basic.js
+814 silly gunzTarPerm extractEntry test/simple-map.asynct.js
+815 silly gunzTarPerm extractEntry test/auto-destroy.js
+816 silly gunzTarPerm extractEntry test/buffering.js
+817 silly gunzTarPerm extractEntry test/options.asynct.js
+818 silly gunzTarPerm extractEntry test/partitioned_unicode.js
+819 silly gunzTarPerm extractEntry examples/map.js
+820 silly gunzTarPerm extractEntry examples/pretty.js
+821 silly gunzTarPerm extractEntry package.json
+822 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+823 silly gunzTarPerm extractEntry default.d.ts
+824 silly gunzTarPerm modified mode [ 'default.d.ts', 436, 420 ]
+825 silly gunzTarPerm extractEntry LICENSE
+826 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+827 silly gunzTarPerm extractEntry test/split.asynct.js
+828 silly gunzTarPerm extractEntry test/try_catch.asynct.js
+829 silly gunzTarPerm extractEntry test/end.js
+830 silly gunzTarPerm extractEntry examples/split.js
+831 silly gunzTarPerm extractEntry test/connect.asynct.js
+832 silly gunzTarPerm extractEntry README.md
+833 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+834 silly gunzTarPerm extractEntry build/add-callback.d.ts
+835 silly gunzTarPerm modified mode [ 'build/add-callback.d.ts', 436, 420 ]
+836 silly gunzTarPerm extractEntry build/add-callback.js
+837 silly gunzTarPerm modified mode [ 'build/add-callback.js', 436, 420 ]
+838 silly gunzTarPerm extractEntry build/add-reducer.d.ts
+839 silly gunzTarPerm modified mode [ 'build/add-reducer.d.ts', 436, 420 ]
+840 silly gunzTarPerm extractEntry build/add-reducer.js
+841 silly gunzTarPerm modified mode [ 'build/add-reducer.js', 436, 420 ]
+842 silly gunzTarPerm extractEntry build/add-reducers.d.ts
+843 silly gunzTarPerm modified mode [ 'build/add-reducers.d.ts', 436, 420 ]
+844 silly gunzTarPerm extractEntry build/add-reducers.js
+845 silly gunzTarPerm modified mode [ 'build/add-reducers.js', 436, 420 ]
+846 silly gunzTarPerm extractEntry build/components.d.ts
+847 silly gunzTarPerm modified mode [ 'build/components.d.ts', 436, 420 ]
+848 silly gunzTarPerm extractEntry build/components.js
+849 silly gunzTarPerm modified mode [ 'build/components.js', 436, 420 ]
+850 silly gunzTarPerm extractEntry build/context.d.ts
+851 silly gunzTarPerm modified mode [ 'build/context.d.ts', 436, 420 ]
+852 silly gunzTarPerm extractEntry build/context.js
+853 silly gunzTarPerm modified mode [ 'build/context.js', 436, 420 ]
+854 silly gunzTarPerm extractEntry build/create-provider.d.ts
+855 silly gunzTarPerm modified mode [ 'build/create-provider.d.ts', 436, 420 ]
+856 silly gunzTarPerm extractEntry build/create-provider.js
+857 silly gunzTarPerm modified mode [ 'build/create-provider.js', 436, 420 ]
+858 silly gunzTarPerm extractEntry build/decorator.d.ts
+859 silly gunzTarPerm modified mode [ 'build/decorator.d.ts', 436, 420 ]
+860 silly gunzTarPerm extractEntry build/decorator.js
+861 silly gunzTarPerm modified mode [ 'build/decorator.js', 436, 420 ]
+862 silly gunzTarPerm extractEntry build/default-global-state-manager.d.ts
+863 silly gunzTarPerm modified mode [ 'build/default-global-state-manager.d.ts', 436, 420 ]
+864 silly gunzTarPerm extractEntry build/default-global-state-manager.js
+865 silly gunzTarPerm modified mode [ 'build/default-global-state-manager.js', 436, 420 ]
+866 silly gunzTarPerm extractEntry build/get-dispatch.d.ts
+867 silly gunzTarPerm modified mode [ 'build/get-dispatch.d.ts', 436, 420 ]
+868 silly gunzTarPerm extractEntry build/get-dispatch.js
+869 silly gunzTarPerm modified mode [ 'build/get-dispatch.js', 436, 420 ]
+870 silly gunzTarPerm extractEntry build/get-global.d.ts
+871 silly gunzTarPerm modified mode [ 'build/get-global.d.ts', 436, 420 ]
+872 silly gunzTarPerm extractEntry build/get-global.js
+873 silly gunzTarPerm modified mode [ 'build/get-global.js', 436, 420 ]
+874 silly gunzTarPerm extractEntry build/global-state-manager.d.ts
+875 silly gunzTarPerm modified mode [ 'build/global-state-manager.d.ts', 436, 420 ]
+876 silly gunzTarPerm extractEntry build/global-state-manager.js
+877 silly gunzTarPerm modified mode [ 'build/global-state-manager.js', 436, 420 ]
+878 silly gunzTarPerm extractEntry build/index.d.ts
+879 silly gunzTarPerm modified mode [ 'build/index.d.ts', 436, 420 ]
+880 silly gunzTarPerm extractEntry build/index.js
+881 silly gunzTarPerm modified mode [ 'build/index.js', 436, 420 ]
+882 silly gunzTarPerm extractEntry build/methods.d.ts
+883 silly gunzTarPerm modified mode [ 'build/methods.d.ts', 436, 420 ]
+884 silly gunzTarPerm extractEntry build/methods.js
+885 silly gunzTarPerm modified mode [ 'build/methods.js', 436, 420 ]
+886 silly gunzTarPerm extractEntry build/remove-callback.d.ts
+887 silly gunzTarPerm modified mode [ 'build/remove-callback.d.ts', 436, 420 ]
+888 silly gunzTarPerm extractEntry build/remove-callback.js
+889 silly gunzTarPerm modified mode [ 'build/remove-callback.js', 436, 420 ]
+890 silly gunzTarPerm extractEntry build/reset-global.d.ts
+891 silly gunzTarPerm modified mode [ 'build/reset-global.d.ts', 436, 420 ]
+892 silly gunzTarPerm extractEntry build/reset-global.js
+893 silly gunzTarPerm modified mode [ 'build/reset-global.js', 436, 420 ]
+894 silly gunzTarPerm extractEntry build/set-global.d.ts
+895 silly gunzTarPerm modified mode [ 'build/set-global.d.ts', 436, 420 ]
+896 silly gunzTarPerm extractEntry build/set-global.js
+897 silly gunzTarPerm modified mode [ 'build/set-global.js', 436, 420 ]
+898 silly gunzTarPerm extractEntry build/use-dispatch.d.ts
+899 silly gunzTarPerm modified mode [ 'build/use-dispatch.d.ts', 436, 420 ]
+900 silly gunzTarPerm extractEntry build/use-dispatch.js
+901 silly gunzTarPerm modified mode [ 'build/use-dispatch.js', 436, 420 ]
+902 silly gunzTarPerm extractEntry build/use-global.d.ts
+903 silly gunzTarPerm modified mode [ 'build/use-global.d.ts', 436, 420 ]
+904 silly gunzTarPerm extractEntry build/use-global.js
+905 silly gunzTarPerm modified mode [ 'build/use-global.js', 436, 420 ]
+906 silly gunzTarPerm extractEntry build/utils/bind-lifecycle-methods.d.ts
+907 silly gunzTarPerm modified mode [ 'build/utils/bind-lifecycle-methods.d.ts', 436, 420 ]
+908 silly gunzTarPerm extractEntry build/utils/bind-lifecycle-methods.js
+909 silly gunzTarPerm modified mode [ 'build/utils/bind-lifecycle-methods.js', 436, 420 ]
+910 silly gunzTarPerm extractEntry build/utils/component-will-unmount.d.ts
+911 silly gunzTarPerm modified mode [ 'build/utils/component-will-unmount.d.ts', 436, 420 ]
+912 silly gunzTarPerm extractEntry build/utils/component-will-unmount.js
+913 silly gunzTarPerm modified mode [ 'build/utils/component-will-unmount.js', 436, 420 ]
+914 silly gunzTarPerm extractEntry build/utils/component-will-update.d.ts
+915 silly gunzTarPerm modified mode [ 'build/utils/component-will-update.d.ts', 436, 420 ]
+916 silly gunzTarPerm extractEntry build/utils/component-will-update.js
+917 silly gunzTarPerm modified mode [ 'build/utils/component-will-update.js', 436, 420 ]
+918 silly gunzTarPerm extractEntry build/utils/is-property-reducer.d.ts
+919 silly gunzTarPerm modified mode [ 'build/utils/is-property-reducer.d.ts', 436, 420 ]
+920 silly gunzTarPerm extractEntry build/utils/is-property-reducer.js
+921 silly gunzTarPerm modified mode [ 'build/utils/is-property-reducer.js', 436, 420 ]
+922 silly gunzTarPerm extractEntry build/utils/object-get-listener.d.ts
+923 silly gunzTarPerm modified mode [ 'build/utils/object-get-listener.d.ts', 436, 420 ]
+924 silly gunzTarPerm extractEntry build/utils/object-get-listener.js
+925 silly gunzTarPerm modified mode [ 'build/utils/object-get-listener.js', 436, 420 ]
+926 silly gunzTarPerm extractEntry build/utils/react-context-error.d.ts
+927 silly gunzTarPerm modified mode [ 'build/utils/react-context-error.d.ts', 436, 420 ]
+928 silly gunzTarPerm extractEntry build/utils/react-context-error.js
+929 silly gunzTarPerm modified mode [ 'build/utils/react-context-error.js', 436, 420 ]
+930 silly gunzTarPerm extractEntry build/utils/react-hooks-error.d.ts
+931 silly gunzTarPerm modified mode [ 'build/utils/react-hooks-error.d.ts', 436, 420 ]
+932 silly gunzTarPerm extractEntry build/utils/react-hooks-error.js
+933 silly gunzTarPerm modified mode [ 'build/utils/react-hooks-error.js', 436, 420 ]
+934 silly gunzTarPerm extractEntry build/with-global.d.ts
+935 silly gunzTarPerm modified mode [ 'build/with-global.d.ts', 436, 420 ]
+936 silly gunzTarPerm extractEntry build/with-global.js
+937 silly gunzTarPerm modified mode [ 'build/with-global.js', 436, 420 ]
+938 silly gunzTarPerm extractEntry types/callback.d.ts
+939 silly gunzTarPerm modified mode [ 'types/callback.d.ts', 436, 420 ]
+940 silly gunzTarPerm extractEntry types/component-class.d.ts
+941 silly gunzTarPerm modified mode [ 'types/component-class.d.ts', 436, 420 ]
+942 silly gunzTarPerm extractEntry types/component.d.ts
+943 silly gunzTarPerm modified mode [ 'types/component.d.ts', 436, 420 ]
+944 silly gunzTarPerm extractEntry types/dispatcher.d.ts
+945 silly gunzTarPerm modified mode [ 'types/dispatcher.d.ts', 436, 420 ]
+946 silly gunzTarPerm extractEntry types/dispatchers.d.ts
+947 silly gunzTarPerm modified mode [ 'types/dispatchers.d.ts', 436, 420 ]
+948 silly gunzTarPerm extractEntry types/middleware.d.ts
+949 silly gunzTarPerm modified mode [ 'types/middleware.d.ts', 436, 420 ]
+950 silly gunzTarPerm extractEntry types/new-global-state.d.ts
+951 silly gunzTarPerm modified mode [ 'types/new-global-state.d.ts', 436, 420 ]
+952 silly gunzTarPerm extractEntry types/omit.d.ts
+953 silly gunzTarPerm modified mode [ 'types/omit.d.ts', 436, 420 ]
+954 silly gunzTarPerm extractEntry types/provider.d.ts
+955 silly gunzTarPerm modified mode [ 'types/provider.d.ts', 436, 420 ]
+956 silly gunzTarPerm extractEntry types/reducer.d.ts
+957 silly gunzTarPerm modified mode [ 'types/reducer.d.ts', 436, 420 ]
+958 silly gunzTarPerm extractEntry types/use-global.d.ts
+959 silly gunzTarPerm modified mode [ 'types/use-global.d.ts', 436, 420 ]
+960 silly gunzTarPerm extractEntry types/with-global.d.ts
+961 silly gunzTarPerm modified mode [ 'types/with-global.d.ts', 436, 420 ]
+962 silly gunzTarPerm extractEntry test/helper/index.js
+963 silly gunzTarPerm extractEntry test/merge.asynct.js
+964 silly gunzTarPerm extractEntry test/index.js
+965 silly gunzTarPerm extractEntry test/parse.asynct.js
+966 silly gunzTarPerm extractEntry test/pause.asynct.js
+967 silly gentlyRm /home/aleixgil/node_modules/.staging/mpg321-556f07d4/node_modules is being purged
+968 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/mpg321-556f07d4/node_modules
+969 silly gunzTarPerm extractEntry test/pipeline.asynct.js
+970 silly gunzTarPerm extractEntry test/readable.asynct.js
+971 silly gunzTarPerm extractEntry test/readArray.asynct.js
+972 silly gunzTarPerm extractEntry test/replace.asynct.js
+973 silly gentlyRm /home/aleixgil/node_modules/.staging/which-f56d6c91/node_modules is being purged
+974 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/which-f56d6c91/node_modules
+975 silly gentlyRm /home/aleixgil/node_modules/.staging/pause-stream-e5eff5bc/node_modules is being purged
+976 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/pause-stream-e5eff5bc/node_modules
+977 silly gentlyRm /home/aleixgil/node_modules/.staging/duplexer-26233d39/node_modules is being purged
+978 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/duplexer-26233d39/node_modules
+979 silly gentlyRm /home/aleixgil/node_modules/.staging/stream-combiner-3ba2c35a/node_modules is being purged
+980 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/stream-combiner-3ba2c35a/node_modules
+981 silly gunzTarPerm extractEntry test/simple-map.asynct.js
+982 silly gunzTarPerm extractEntry test/spec.asynct.js
+983 silly gentlyRm /home/aleixgil/node_modules/.staging/from-01f61158/node_modules is being purged
+984 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/from-01f61158/node_modules
+985 silly gentlyRm /home/aleixgil/node_modules/.staging/map-stream-1f4e48da/node_modules is being purged
+986 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/map-stream-1f4e48da/node_modules
+987 silly gentlyRm /home/aleixgil/node_modules/.staging/isexe-9163d648/node_modules is being purged
+988 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/isexe-9163d648/node_modules
+989 silly gunzTarPerm extractEntry test/split.asynct.js
+990 silly gunzTarPerm extractEntry test/stringify.js
+991 silly gunzTarPerm extractEntry test/writeArray.asynct.js
+992 silly gentlyRm /home/aleixgil/node_modules/.staging/through-3b438eec/node_modules is being purged
+993 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/through-3b438eec/node_modules
+994 silly gentlyRm /home/aleixgil/node_modules/.staging/split-a0b3c198/node_modules is being purged
+995 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/split-a0b3c198/node_modules
+996 silly gentlyRm /home/aleixgil/node_modules/.staging/event-stream-7dac5de4/node_modules is being purged
+997 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/event-stream-7dac5de4/node_modules
+998 silly gentlyRm /home/aleixgil/node_modules/.staging/reactn-190c5e0e/node_modules is being purged
+999 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.staging/reactn-190c5e0e/node_modules
+1000 silly doParallel preinstall 12
+1001 silly preinstall duplexer@0.1.1 /home/aleixgil/node_modules/.staging/duplexer-26233d39
+1002 info lifecycle duplexer@0.1.1~preinstall: duplexer@0.1.1
+1003 silly preinstall from@0.1.7 /home/aleixgil/node_modules/.staging/from-01f61158
+1004 info lifecycle from@0.1.7~preinstall: from@0.1.7
+1005 silly preinstall isexe@2.0.0 /home/aleixgil/node_modules/.staging/isexe-9163d648
+1006 info lifecycle isexe@2.0.0~preinstall: isexe@2.0.0
+1007 silly preinstall map-stream@0.0.7 /home/aleixgil/node_modules/.staging/map-stream-1f4e48da
+1008 info lifecycle map-stream@0.0.7~preinstall: map-stream@0.0.7
+1009 silly preinstall through@2.3.8 /home/aleixgil/node_modules/.staging/through-3b438eec
+1010 info lifecycle through@2.3.8~preinstall: through@2.3.8
+1011 silly preinstall stream-combiner@0.2.2 /home/aleixgil/node_modules/.staging/stream-combiner-3ba2c35a
+1012 info lifecycle stream-combiner@0.2.2~preinstall: stream-combiner@0.2.2
+1013 silly preinstall split@1.0.1 /home/aleixgil/node_modules/.staging/split-a0b3c198
+1014 info lifecycle split@1.0.1~preinstall: split@1.0.1
+1015 silly preinstall pause-stream@0.0.11 /home/aleixgil/node_modules/.staging/pause-stream-e5eff5bc
+1016 info lifecycle pause-stream@0.0.11~preinstall: pause-stream@0.0.11
+1017 silly preinstall event-stream@3.3.5 /home/aleixgil/node_modules/.staging/event-stream-7dac5de4
+1018 info lifecycle event-stream@3.3.5~preinstall: event-stream@3.3.5
+1019 silly preinstall which@1.3.1 /home/aleixgil/node_modules/.staging/which-f56d6c91
+1020 info lifecycle which@1.3.1~preinstall: which@1.3.1
+1021 silly preinstall mpg321@0.1.5 /home/aleixgil/node_modules/.staging/mpg321-556f07d4
+1022 info lifecycle mpg321@0.1.5~preinstall: mpg321@0.1.5
+1023 silly preinstall reactn@2.1.2 /home/aleixgil/node_modules/.staging/reactn-190c5e0e
+1024 info lifecycle reactn@2.1.2~preinstall: reactn@2.1.2
+1025 silly lifecycle duplexer@0.1.1~preinstall: no script for preinstall, continuing
+1026 silly lifecycle from@0.1.7~preinstall: no script for preinstall, continuing
+1027 silly lifecycle isexe@2.0.0~preinstall: no script for preinstall, continuing
+1028 silly lifecycle map-stream@0.0.7~preinstall: no script for preinstall, continuing
+1029 silly lifecycle through@2.3.8~preinstall: no script for preinstall, continuing
+1030 silly lifecycle stream-combiner@0.2.2~preinstall: no script for preinstall, continuing
+1031 silly lifecycle split@1.0.1~preinstall: no script for preinstall, continuing
+1032 silly lifecycle pause-stream@0.0.11~preinstall: no script for preinstall, continuing
+1033 silly lifecycle event-stream@3.3.5~preinstall: no script for preinstall, continuing
+1034 silly lifecycle which@1.3.1~preinstall: no script for preinstall, continuing
+1035 silly lifecycle mpg321@0.1.5~preinstall: no script for preinstall, continuing
+1036 silly lifecycle reactn@2.1.2~preinstall: no script for preinstall, continuing
+1037 silly doReverseSerial remove 0
+1038 silly doSerial move 0
+1039 silly doSerial finalize 12
+1040 silly finalize /home/aleixgil/node_modules/duplexer
+1041 silly finalize /home/aleixgil/node_modules/from
+1042 silly finalize /home/aleixgil/node_modules/isexe
+1043 silly finalize /home/aleixgil/node_modules/map-stream
+1044 silly finalize /home/aleixgil/node_modules/through
+1045 silly finalize /home/aleixgil/node_modules/stream-combiner
+1046 silly finalize /home/aleixgil/node_modules/split
+1047 silly finalize /home/aleixgil/node_modules/pause-stream
+1048 silly finalize /home/aleixgil/node_modules/event-stream
+1049 silly finalize /home/aleixgil/node_modules/which
+1050 silly finalize /home/aleixgil/node_modules/mpg321
+1051 silly finalize /home/aleixgil/node_modules/reactn
+1052 silly doSerial build 12
+1053 silly build duplexer@0.1.1
+1054 info linkStuff duplexer@0.1.1
+1055 silly linkStuff duplexer@0.1.1 has /home/aleixgil/node_modules as its parent node_modules
+1056 verbose linkBins duplexer@0.1.1
+1057 verbose linkMans duplexer@0.1.1
+1058 silly build from@0.1.7
+1059 info linkStuff from@0.1.7
+1060 silly linkStuff from@0.1.7 has /home/aleixgil/node_modules as its parent node_modules
+1061 verbose linkBins from@0.1.7
+1062 verbose linkMans from@0.1.7
+1063 silly build isexe@2.0.0
+1064 info linkStuff isexe@2.0.0
+1065 silly linkStuff isexe@2.0.0 has /home/aleixgil/node_modules as its parent node_modules
+1066 verbose linkBins isexe@2.0.0
+1067 verbose linkMans isexe@2.0.0
+1068 silly build map-stream@0.0.7
+1069 info linkStuff map-stream@0.0.7
+1070 silly linkStuff map-stream@0.0.7 has /home/aleixgil/node_modules as its parent node_modules
+1071 verbose linkBins map-stream@0.0.7
+1072 verbose linkMans map-stream@0.0.7
+1073 silly build through@2.3.8
+1074 info linkStuff through@2.3.8
+1075 silly linkStuff through@2.3.8 has /home/aleixgil/node_modules as its parent node_modules
+1076 verbose linkBins through@2.3.8
+1077 verbose linkMans through@2.3.8
+1078 silly build stream-combiner@0.2.2
+1079 info linkStuff stream-combiner@0.2.2
+1080 silly linkStuff stream-combiner@0.2.2 has /home/aleixgil/node_modules as its parent node_modules
+1081 verbose linkBins stream-combiner@0.2.2
+1082 verbose linkMans stream-combiner@0.2.2
+1083 silly build split@1.0.1
+1084 info linkStuff split@1.0.1
+1085 silly linkStuff split@1.0.1 has /home/aleixgil/node_modules as its parent node_modules
+1086 verbose linkBins split@1.0.1
+1087 verbose linkMans split@1.0.1
+1088 silly build pause-stream@0.0.11
+1089 info linkStuff pause-stream@0.0.11
+1090 silly linkStuff pause-stream@0.0.11 has /home/aleixgil/node_modules as its parent node_modules
+1091 verbose linkBins pause-stream@0.0.11
+1092 verbose linkMans pause-stream@0.0.11
+1093 silly build event-stream@3.3.5
+1094 info linkStuff event-stream@3.3.5
+1095 silly linkStuff event-stream@3.3.5 has /home/aleixgil/node_modules as its parent node_modules
+1096 verbose linkBins event-stream@3.3.5
+1097 verbose linkMans event-stream@3.3.5
+1098 silly build which@1.3.1
+1099 info linkStuff which@1.3.1
+1100 silly linkStuff which@1.3.1 has /home/aleixgil/node_modules as its parent node_modules
+1101 verbose linkBins which@1.3.1
+1102 verbose link bins [ { which: './bin/which' },
+1102 verbose link bins   '/home/aleixgil/node_modules/.bin',
+1102 verbose link bins   false ]
+1103 verbose linkMans which@1.3.1
+1104 silly gentlyRm /home/aleixgil/node_modules/.bin/which is being purged
+1105 verbose gentlyRm don't care about contents; nuking /home/aleixgil/node_modules/.bin/which
+1106 silly build mpg321@0.1.5
+1107 info linkStuff mpg321@0.1.5
+1108 silly linkStuff mpg321@0.1.5 has /home/aleixgil/node_modules as its parent node_modules
+1109 verbose linkBins mpg321@0.1.5
+1110 verbose linkMans mpg321@0.1.5
+1111 silly build reactn@2.1.2
+1112 info linkStuff reactn@2.1.2
+1113 silly linkStuff reactn@2.1.2 has /home/aleixgil/node_modules as its parent node_modules
+1114 verbose linkBins reactn@2.1.2
+1115 verbose linkMans reactn@2.1.2
+1116 silly doSerial global-link 0
+1117 silly doParallel update-linked 0
+1118 silly doSerial install 12
+1119 silly install duplexer@0.1.1 /home/aleixgil/node_modules/.staging/duplexer-26233d39
+1120 info lifecycle duplexer@0.1.1~install: duplexer@0.1.1
+1121 silly lifecycle duplexer@0.1.1~install: no script for install, continuing
+1122 silly install from@0.1.7 /home/aleixgil/node_modules/.staging/from-01f61158
+1123 info lifecycle from@0.1.7~install: from@0.1.7
+1124 silly lifecycle from@0.1.7~install: no script for install, continuing
+1125 silly install isexe@2.0.0 /home/aleixgil/node_modules/.staging/isexe-9163d648
+1126 info lifecycle isexe@2.0.0~install: isexe@2.0.0
+1127 silly lifecycle isexe@2.0.0~install: no script for install, continuing
+1128 silly install map-stream@0.0.7 /home/aleixgil/node_modules/.staging/map-stream-1f4e48da
+1129 info lifecycle map-stream@0.0.7~install: map-stream@0.0.7
+1130 silly lifecycle map-stream@0.0.7~install: no script for install, continuing
+1131 silly install through@2.3.8 /home/aleixgil/node_modules/.staging/through-3b438eec
+1132 info lifecycle through@2.3.8~install: through@2.3.8
+1133 silly lifecycle through@2.3.8~install: no script for install, continuing
+1134 silly install stream-combiner@0.2.2 /home/aleixgil/node_modules/.staging/stream-combiner-3ba2c35a
+1135 info lifecycle stream-combiner@0.2.2~install: stream-combiner@0.2.2
+1136 silly lifecycle stream-combiner@0.2.2~install: no script for install, continuing
+1137 silly install split@1.0.1 /home/aleixgil/node_modules/.staging/split-a0b3c198
+1138 info lifecycle split@1.0.1~install: split@1.0.1
+1139 silly lifecycle split@1.0.1~install: no script for install, continuing
+1140 silly install pause-stream@0.0.11 /home/aleixgil/node_modules/.staging/pause-stream-e5eff5bc
+1141 info lifecycle pause-stream@0.0.11~install: pause-stream@0.0.11
+1142 silly lifecycle pause-stream@0.0.11~install: no script for install, continuing
+1143 silly install event-stream@3.3.5 /home/aleixgil/node_modules/.staging/event-stream-7dac5de4
+1144 info lifecycle event-stream@3.3.5~install: event-stream@3.3.5
+1145 silly lifecycle event-stream@3.3.5~install: no script for install, continuing
+1146 silly install which@1.3.1 /home/aleixgil/node_modules/.staging/which-f56d6c91
+1147 info lifecycle which@1.3.1~install: which@1.3.1
+1148 silly lifecycle which@1.3.1~install: no script for install, continuing
+1149 silly install mpg321@0.1.5 /home/aleixgil/node_modules/.staging/mpg321-556f07d4
+1150 info lifecycle mpg321@0.1.5~install: mpg321@0.1.5
+1151 verbose lifecycle mpg321@0.1.5~install: unsafe-perm in lifecycle false
+1152 verbose lifecycle mpg321@0.1.5~install: PATH: /usr/share/npm/bin/node-gyp-bin:/home/aleixgil/node_modules/mpg321/node_modules/.bin:/home/aleixgil/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+1153 verbose lifecycle mpg321@0.1.5~install: CWD: /home/aleixgil/node_modules/mpg321
+1154 silly lifecycle mpg321@0.1.5~install: Args: [ '-c', 'node bin/check-mpg321.js' ]
+1155 silly lifecycle mpg321@0.1.5~install: Returned: code: 1  signal: null
+1156 info lifecycle mpg321@0.1.5~install: Failed to exec install script
+1157 verbose unlock done using /home/aleixgil/.npm/_locks/staging-be82f8cd8e6ba370.lock for /home/aleixgil/node_modules/.staging
+1158 silly rollbackFailedOptional Starting
+1159 silly rollbackFailedOptional Finishing
+1160 silly runTopLevelLifecycles Starting
+1161 silly runTopLevelLifecycles Finishing
+1162 silly install printInstalled
+1163 warn enoent ENOENT: no such file or directory, open '/home/aleixgil/package.json'
+1164 warn aleixgil No description
+1165 warn aleixgil No repository field.
+1166 warn aleixgil No README data
+1167 warn aleixgil No license field.
+1168 verbose stack Error: mpg321@0.1.5 install: `node bin/check-mpg321.js`
+1168 verbose stack Exit status 1
+1168 verbose stack     at EventEmitter.<anonymous> (/usr/share/npm/lib/utils/lifecycle.js:232:16)
+1168 verbose stack     at emitTwo (events.js:126:13)
+1168 verbose stack     at EventEmitter.emit (events.js:214:7)
+1168 verbose stack     at ChildProcess.<anonymous> (/usr/share/npm/lib/utils/spawn.js:24:14)
+1168 verbose stack     at emitTwo (events.js:126:13)
+1168 verbose stack     at ChildProcess.emit (events.js:214:7)
+1168 verbose stack     at maybeClose (internal/child_process.js:925:16)
+1168 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+1169 verbose pkgid mpg321@0.1.5
+1170 verbose cwd /home/aleixgil/Dropbox/AI-Voice
+1171 error Linux 4.15.0-58-generic
+1172 error argv "/usr/bin/node" "/usr/bin/npm" "install" "mpg321"
+1173 error node v8.10.0
+1174 error npm  v3.5.2
+1175 error code ELIFECYCLE
+1176 error mpg321@0.1.5 install: `node bin/check-mpg321.js`
+1176 error Exit status 1
+1177 error Failed at the mpg321@0.1.5 install script 'node bin/check-mpg321.js'.
+1177 error Make sure you have the latest version of node.js and npm installed.
+1177 error If you do, this is most likely a problem with the mpg321 package,
+1177 error not with npm itself.
+1177 error Tell the author that this fails on your system:
+1177 error     node bin/check-mpg321.js
+1177 error You can get information on how to open an issue for this project with:
+1177 error     npm bugs mpg321
+1177 error Or if that isn't available, you can get their info via:
+1177 error     npm owner ls mpg321
+1177 error There is likely additional logging output above.
+1178 verbose exit [ 1, true ]
