@@ -5,10 +5,9 @@ import speech_recognition as srec
 
 class SR:
     '''
-    Speech Recognition class
+    Classe de RV.
     '''
     def listener(self, rec, mic):
-
         with mic as source:
             print("Speak to listener...")
             rec.adjust_for_ambient_noise(source) # adjust 1 sec

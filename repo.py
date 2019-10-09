@@ -3,3 +3,5 @@ MONTHS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agost
 DAYS = []
 
 ALARM_F = [False, ""]
+
+TINKER = ['', '/home/linaro/Escritorio/AI-Voice/']

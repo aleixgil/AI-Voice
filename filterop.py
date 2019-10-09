@@ -3,9 +3,13 @@ from ttos import Ttos
 from fun import Fun
 
 class Filterop:
-    
+    '''
+    Classe per analitzar la frase de la pregunta i filtrar la resposta.
+    '''
     def options(self, rec, mic, text):
-
+        '''
+        Funció d'anàlisis i filtratge.
+        '''
         if "hora" in text:
             Timeop().currentTime()
         elif "día" in text:
