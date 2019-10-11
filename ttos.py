@@ -6,6 +6,7 @@ class Ttos:
     '''
     Classe Text-to-speech.
     '''
+    
     def say(self, mytext):
         '''
         Convertir text a fitxer d'àudio i reproduir-lo.
@@ -32,3 +33,9 @@ class Ttos:
         Reproducció de fitxer d'àudio preestablert.
         '''
         os.system("mpg321 "+TINKER[0]+"audios/deNada.mp3")
+
+    def clockalarm(self):
+        '''
+        Reproducció de fitxer d'àudio preestablert.
+        '''
+        os.system("gnome-terminal -e 'mpg321 audios/clockalarm.mp3'")

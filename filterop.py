@@ -1,3 +1,4 @@
+from calendarop import Calendarop
 from timeop import Timeop
 from ttos import Ttos
 from fun import Fun
@@ -12,12 +13,19 @@ class Filterop:
         '''
         if "hora" in text:
             Timeop().currentTime()
+        elif "buenos días" in text:
+            Calendarop().goodm()
+        elif ("día" in text) and ("mañana" in text):
+            Timeop().tomorrowDate()
         elif "día" in text:
             Timeop().currentDate()
-        elif ("cero entre cero" or "cero dividido por cero") in text:
-            Fun().cero()
         elif "alarma" in text:
             Timeop().alarm(text)
+        elif "apuntar" in text:
+            Calendarop().takeNote(text)
+        elif "edad" in text:
+            Fun().age()
+        elif ("cero entre cero" or "cero dividido por cero") in text:
+            Fun().cero()
         else:
             Ttos().error()
-            print("ERROR")

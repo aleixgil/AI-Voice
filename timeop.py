@@ -6,85 +6,84 @@ class Timeop:
     '''
     Classe amb respostes relacionades amb el temps.
     '''
+    
     def currentTime(self):
         '''
-        La hora actual.
+        Retorna la hora actual.
         '''
-        hour = datetime.datetime.now().hour
-        minute = datetime.datetime.now().minute
-        Ttos().say("Són las {} y {}.".format(hour, minute))
-        print("Són las {} y {}.".format(hour,minute))
+        hms = str(datetime.datetime.today()).split(' ')[1].split(':')  # Llista amb la hora, els minuts i els segons actuals
+        return(Ttos().say("Són las {} y {}.".format(hms[0], hms[1])))
 
     def currentDate(self):
         '''
-        La data actual.
+        Retorna la data actual.
         '''
-        year = datetime.datetime.now().year
-        day = datetime.datetime.now().day
-        month = MONTHS[datetime.datetime.now().month - 1]
-        Ttos().say("Hoy es {} de {} de {}.".format(day, month, year))
+        ydmtd = str(datetime.datetime.today()).split(' ')[0].split('-')  # Llista amb l'any, el mes i el dia d'avuí
+        return(Ttos().say("Hoy es {} de {} de {}.".format(ydmtd[2], MONTHS[int(ydmtd[1]) - 1], ydmtd[0])))
+
+    def tomorrowDate(self):
+        '''
+        Retorna la data de demà
+        '''
+        ydmtw = str(datetime.datetime.today() + datetime.timedelta(days=1)).split(' ')[0].split('-')  # Llista amb l'any, el mes i el dia de demà
+        return(Ttos().say("Mañana será {} de {} de {}.".format(ydmtw[2], MONTHS[int(ydmtw[1]) - 1], ydmtw[0])))
 
     def alarm(self, text):
         '''
         Funció gestió de l'alarma.
         '''
-        # Lima, pon/ponme/poner alarma a las X
-        # ... mañana a las X
-        # ... mañana a las X de la mañana/mediodia/tarde/noche
-        # ... pasado mañana a las X ...
-        # ... el dia X a las X
-        # ... en X h/min/sec
-        # ... para dormir X h
-        # COMPROVAR QUE TRADUEIX SI DIC LES 12:30
-        pass
+        h, m = "", "00"
+        d = str(datetime.datetime.today()).split(' ')[0]
+        dm = str(datetime.datetime.today() + datetime.timedelta(days=1)).split(' ')[0]
+
+        for wd in text.split(' '): # h
+            if wd.isdigit():
+                h = wd
+            elif ":" in wd: # h:m
+                h, m = wd.split(':')[0], wd.split(':')[1]
+
+        # Diferents maneres de ordenar posar l'alarma
+        if ("mañana" in text):
+            self.set_alarm(dm, h, m)
+        else:
+            if datetime.datetime.now().hour < 12:
+                if (int(h) < 12) and (self.validate_hour(h, m) == False):
+                    self.set_alarm(d, str(int(h)+12), m)
+                else:
+                    self.set_alarm(d, h, m)
+            else:
+                if int(h) < 12:
+                    if self.validate_hour(str(int(h)+12), m):
+                        self.set_alarm(d, str(int(h)+12), m)
+                    else:    
+                        self.set_alarm(dm, h, m)
+                else:
+                    if self.validate_hour(h, m):
+                        self.set_alarm(d, h, m)
+                    else:
+                        self.set_alarm(dm, str(int(h)-12), m)
         
-    def set_alarm(self, year, month, day, hour, minute):
+    def set_alarm(self, ymd, hour, minute):
         '''
-        Posar una alarma.
+        Activar alarma.
         '''
-        #hour = datetime.datetime.now().hour
-        #minute = datetime.datetime.now().minute
-        #day = datetime.datetime.now().day
-        #month = datetime.datetime.now().month
-        #year = datetime.datetime.now().year
-        ALARM_F[1] = "{}/{}/{} {}:{}".format(year, month, day, hour, minute)
-        ALARM_F[0] = True
+        ALARM_F[1] = "{} {}:{}".format(ymd, hour, minute)
+        Ttos().say("Alarma programada para las {} {}.".format(hour, minute))
 
     def check_alarm(self):
         '''
-        Comprovar la hora de l'alarma.
+        Comprovar l'hora de l'alarma.
         '''
-        hour = datetime.datetime.now().hour
-        minute = datetime.datetime.now().minute
-        day = datetime.datetime.now().day
-        month = datetime.datetime.now().month
-        year = datetime.datetime.now().year
-        date_alarm = "{}/{}/{} {}:{}".format(year, month, day, hour, minute)
+        t = datetime.datetime.now()
+        date_alarm = "{}-{}-{} {}:{}".format(t.year, t.month, t.day, t.hour, t.minute)
         return (date_alarm == ALARM_F[1])
 
-    def validate_day(self, d):
+    def validate_hour(self, h, m):
         '''
-        Comprovació del dia actual.
+        Comprovació de l'hora actual.
         '''
-        try:
-            datetime.datetime.strptime(d, "%Y/%m/%d") # year/month/day
-        except:
-            print("WRONG DAY")
+        if h.isdigit():
+            if (int(h) > datetime.datetime.today().hour) or ((int(h) == datetime.datetime.today().hour) and (int(m) > datetime.datetime.today().minute)):
+                return(True)
+        return(False)
 
-    def validate_hour(self, h):
-        '''
-        Comprovació de la hora actual.
-        '''
-        try:
-            datetime.datetime.strptime(h, "%H:%M") # hour:minute
-        except:
-            print("WRONG HOUR")
-
-    def validate_date(self, d):
-        '''
-        Comprovació de la data actual.
-        '''
-        try:
-            datetime.datetime.strptime(d, "% Y/%m/%d %H:%M")
-        except:
-            print("WRONG DATE")

@@ -1,29 +1,54 @@
-# PROVA CALENDARI
 import datetime
-from repo import MONTHS
-#import calendar
+from repo import CN,MONTHS
+from ttos import Ttos
 
-day = "el 1 de octubre"
-dl = day.split(' ')
+class Calendarop:
+    '''
+    Classe amb respostes relacionades amb el recordatori d'informació
+    '''
 
-msg = "dentista"
+    def takeNote(self, text):
+        '''
+        Funció per apuntar una recordatori.
+        '''
+        n = ""
+        y = str(datetime.datetime.now().year)
+        m = str(datetime.datetime.now().month)
+        d = str(datetime.datetime.now().day)
 
+        for wd in text.split(' '):  # h
+            if wd.isdigit():
+                d = wd
+            elif wd in MONTHS:
+                m = str(MONTHS.index(wd)+1)
+        n = text.split("apuntar", 1)[1]
+        if "mañana" in text:
+            n = text.split("mañana", 1)[1]
+            d = str(datetime.datetime.today() + datetime.timedelta(days=1)).split(' ')[0].split('-')[2]
+        elif d in text:
+            n = text.split(MONTHS[int(m)-1], 1)[1]
+        else:
+            n = text.split("apuntar", 1)[1]
 
-def validate(date_text):
-    print("=======================")
-    print(date_text)
-    try:
-        datetime.datetime.strptime(date_text, '%Y-%m-%d')
-    except ValueError:
-        raise ValueError("Incorrect data format, should be YYYY-MM-DD")
+        if n != "":
+            CN.append(("{}-{}-{}".format(y,m,d),n))
+            Ttos().say("Apuntado para el dia {} de {}: {}".format(d,MONTHS[int(m) - 1],n))
+        else:
+            Ttos().say("Lo siento, no te he entendido.")
 
-# print (datetime.today().strftime('%Y-%m-%d'))
-
-for i in dl:
-    if i in MONTHS:
-        m = str("{:02d}".format(MONTHS.index(i) + 1))
-        print (m)
-    elif i.isdigit():
-        d = str("{:02d}".format(int(i)))
-        print (d)
-    #validate("2019" + '-' + m + '-' + d)
+    def goodm(self):
+        '''
+        Funció per saber els recordatoris del dia
+        '''
+        Ttos().say("Buenos días")
+        if CN != []:
+            currentdate = str(datetime.datetime.today()).split(' ')[0]
+            f = 0
+            for n in CN:
+                if n[0] == currentdate:
+                    if f == 0:
+                        Ttos().say("hoy tienes")
+                        f = 1
+                    Ttos().say(n[1])
+        else:
+            Ttos().say("hoy no tienes nada pendiente")
