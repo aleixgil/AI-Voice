@@ -12,30 +12,31 @@ class Ttos:
         Convertir text a fitxer d'àudio i reproduir-lo.
         '''
         myobj = gTTS(text=mytext, lang="es")
-        myobj.save(TINKER[0]+"instantAudio.mp3")
-        os.system("mpg321 "+TINKER[0]+"instantAudio.mp3")
-        os.remove(TINKER[0]+"instantAudio.mp3")
+        myobj.save(TINKER[1]+"instantAudio.mp3")
+        os.system("mpg321 "+TINKER[1]+"instantAudio.mp3")
+        os.remove(TINKER[1]+"instantAudio.mp3")
         
     def intro(self):
         '''
         Reproducció de fitxer d'àudio preestablert.
         '''
-        os.system("mpg321 "+TINKER[0]+"audios/intro.mp3")
+        os.system("mpg321 "+TINKER[1]+"audios/intro.mp3")
     
     def error(self):
         '''
         Reproducció de fitxer d'àudio preestablert.
         '''
-        os.system("mpg321 "+TINKER[0]+"audios/error.mp3")
+        os.system("mpg321 "+TINKER[1]+"audios/error.mp3")
 
     def deNada(self):
         '''
         Reproducció de fitxer d'àudio preestablert.
         '''
-        os.system("mpg321 "+TINKER[0]+"audios/deNada.mp3")
+        os.system("mpg321 "+TINKER[1]+"audios/deNada.mp3")
 
     def clockalarm(self):
         '''
         Reproducció de fitxer d'àudio preestablert.
         '''
-        os.system("gnome-terminal -e 'mpg321 audios/clockalarm.mp3'")
+        os.system(TINKER[3]+"'mpg321 "+TINKER[1]+'audios/clockalarm.mp3'+TINKER[4]+"'"+'"')
+

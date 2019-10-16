@@ -13,7 +13,7 @@ mic = sr.Microphone() # Creació instància micròfon.
 rec.energy_threshold = 90 # Llindar del nivell de so. Valors per sota del llindar es consideren silenci.
 rec.pause_threshold = 1 # Llindar de pausa. Minim temps (sec) de silenci per registrar el final d'una frase.
 
-# Ttos().intro() # Introducció de Lima.
+Ttos().intro() # Introducció de Lima.
 
 while True: # Inici bucle principal.
     # Detecció de l'hora per fer sonar l'alarma.
